@@ -1,0 +1,515 @@
+﻿/*********************************************************************/
+/**** RESET DEI VALORI DI DEFAULKT DEI BROWSER ***********************/
+/*********************************************************************/
+@import "../../stile/struttura.css" print;
+@import "../../stile/bootstrap/bootstrap.min.css" print;
+@import "../../stile/bootstrap/ita-bootstrap.css" print;
+
+
+@media print {
+  a[href]:after {
+    content: none;
+  }
+}
+
+#formid_intestazione1, #formid_intestazione2, #formid_intestazione3
+{
+    display: none !important;
+}
+
+
+#formid_sx, #formid_dx, #formid_fondo1, #formid_fondo2, #formid_fondo3, #footer_container
+{
+    display: none !important;
+}
+
+#boxMascheraDiRicercaPerServizioStandard, #boxPaginazioneServizioStandard, #boxBricioleDiPane h2
+{
+    display: none !important;
+}
+
+#formid_centro ul
+{
+    clear: both;
+    margin-left: 30px;
+}
+
+#formid_centro ol
+{
+    clear: both;
+    margin-left: 30px;
+}
+
+#boxTotale a
+{
+    color: black;
+    text-decoration: underline;
+}
+
+
+
+/*********************************************************************/
+/**** RESET DEI VALORI DI DEFAULKT DEI BROWSER ***********************/
+/*********************************************************************/
+
+#boxNotizieHomePage .notiziaConFoto img, #boxNotizieHomePage .notiziaConFoto2, #boxNotizieHomePage .notiziaConFoto2 img
+{
+    float: left !important;
+}
+
+#boxNotizieArchivio .notiziaConFoto
+{
+    display: block;
+}
+
+#boxNotizieArchivio .notiziaConFoto img
+{
+    float: right !important;
+}
+
+#boxNotizieDettaglio #formid_RptmyAspnetForm0_Div1 img
+{
+    float: right !important;
+}
+
+#boxNotizieHomePage .sfondo1
+{
+    clear: both !important;
+    width: 100% !important;
+    color: #50504D !important;
+    border-bottom: 0px !important;
+    font-weight: normal !important;
+    font-size: 1.615em !important;
+    padding: 0px !important;
+    font-family: Kozuka Mincho Pro B !important;
+    border-bottom: 6px solid #F5F5F5 !important;
+    margin: 10PX 0 10px !important;
+}
+
+#formid_NotizieInEvidenza, #formid_inBreve
+{
+    display: none !important;
+}
+
+#boxNotizieHomePage .sfondo1 #formid_lblPrimoPiano
+{
+    margin: 5px 0 0px !important;
+    padding-top: 0px !important;
+    padding-left: 3px !important;
+    letter-spacing: -1px !important;
+    text-transform: capitalize !important;
+    font-weight: normal !important;
+    display: block !important;
+}
+
+#boxNotizieHomePage .notiziaConFoto
+{
+    padding: 9px 0px !important;
+    border: 0px !important;
+}
+
+#boxNotizieHomePage .notiziaConFoto
+{
+    padding: 9px 0px !important;
+    margin: 0px !important;
+    border: 0px !important;
+}
+
+#boxNotizieHomePage .notiziaConFoto img
+{
+    border: 1px solid #CCC !important;
+    margin: 0px !important;
+    float: left !important;
+    width: 134px !important;
+    margin-right: 10px !important;
+    clear: both !important;
+}
+
+#boxNotizieHomePage .notiziaConFoto h1
+{
+    margin-left: 144px !important;
+    font-weight: normal !important;
+    font-size: 1.385em !important;
+    margin-top: -4px !important;
+    line-height: 140% !important;
+    padding-bottom: 0px !important;
+    display: inline-block !important;
+    width: 72% !important;
+    margin-left: 0px !important;
+    line-height: normal !important;
+}
+
+#boxNotizieHomePage .notiziaConFoto .strillo
+{
+    width: 72% !important;
+    margin-left: 0px !important;
+    line-height: normal !important;
+    display: inline-block !important;
+    text-align: justify !important;
+    margin-top: 3px !important;
+}
+
+#boxNotizieHomePage .notiziaConFoto h2
+{
+    float: none !important;
+    font-style: normal !important;
+    width: auto !important;
+    margin: 5px 0 0px 0px !important;
+    display: block !important;
+    color: #404040 !important;
+    clear: both !important;
+}
+
+#boxNotizieHomePage .notiziaConFoto2
+{
+    position: relative !important;
+    width: 100% !important;
+    margin: 0px !important;
+    padding: 9px 0 !important;
+    text-align: justify !important;
+    border-bottom: 0px !important;
+    clear: both;
+    display: block !important;
+    margin: 0px !important;
+}
+
+#boxNotizieHomePage .notiziaConFoto2 img
+{
+    padding: 4px !important;
+    border: 1px solid #B1B1B1 !important;
+    width: 70px !important;
+    float: left !important;
+    margin-right: 10px !important;
+}
+
+#boxNotizieHomePage .notiziaConFoto2 .titolo
+{
+    margin-left: 87px !important;
+    font-weight: normal !important;
+    font-size: 1.385em !important;
+    margin-top: -4px !important;
+    line-height: 140% !important;
+    padding-bottom: 0px !important;
+    float: none !important;
+    display: inline-block !important;
+    width: 75% !important;
+    margin-left: 0px !important;
+    line-height: normal !important;
+}
+
+#boxNotizieHomePage .notiziaConFoto2 .strillo
+{
+    text-align: justify !important;
+    margin: 5px 0 0px 0px !important;
+    display: block !important;
+    clear: both !important;
+    display: inline-block !important;
+    width: 100% !important;
+    margin-left: 0px !important;
+    line-height: normal !important;
+}
+
+#boxNotizieHomePage .notiziaConFoto2 .datapubblicazione
+{
+    clear: both !important;
+    float: none !important;
+    font-style: normal !important;
+    width: auto !important;
+    margin: 3px 0 0 87px !important;
+    display: block !important;
+    color: #404040 !important;
+    clear: none !important;
+    display: inline-block !important;
+    width: 100% !important;
+    margin-left: 0px !important;
+    line-height: normal !important;
+    text-indent: 0px !important;
+}
+
+#boxNotizieHomePage .notiziaSenzaFoto
+{
+    position: relative !important;
+    width: 100% !important;
+    margin: 0px !important;
+    padding: 0px 0 10px !important;
+    text-align: justify !important;
+    border-bottom: 0px !important;
+    clear: both;
+    display: block !important;
+    margin: 0px !important;
+}
+
+#boxNotizieHomePage .notiziaSenzaFoto h2
+{
+    margin-left: 0px !important;
+    font-weight: normal !important;
+    font-size: 1.385em !important;
+    margin-top: -4px !important;
+    line-height: 140% !important;
+    padding-bottom: 0px !important;
+}
+
+#boxNotizieHomePage .notiziaSenzaFoto h1
+{
+    float: none !important;
+    font-style: normal !important;
+    width: auto !important;
+    margin: 0px 0 0px 0px !important;
+    display: block !important;
+    color: #404040 !important;
+}
+
+#boxNotizieHomePage .notiziaSenzaFoto H1:after
+{
+    display: none !important;
+}
+
+#boxNotizieHomePage .linkArchivioNotizie a
+{
+    clear: both !important;
+    float: right !important;
+    margin: 0px !important;
+    background-color: white !important;
+    border: 0px !important;
+    border-top: 6px solid #F5F5F5 !important;
+    margin-top: 20px !important;
+    width: 100% !important;
+    padding: 8px 0px !important;
+    text-align: right !important;
+    font-size: 1.077em !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+}
+
+#boxNotizieHomePage .linkArchivioNotizie a:hover
+{
+    text-decoration: underline !important;
+}
+
+/*********************************************************************/
+/**** COMUNICATI STAMPA ********************************************************/
+/*********************************************************************/
+
+#BoxServizioGenerico .immagine
+{
+    float: left !important;
+}
+
+/*********************************************************************/
+/**** PROCEDIMENTI ********************************************************/
+/*********************************************************************/
+
+#boxProcedimenti .paginazione .sinistra
+{
+    float: left !important;
+}
+
+#boxProcedimenti .paginazione .destra
+{
+    float: right !important;
+}
+
+#boxProcedimenti .paginazione
+{
+    float: left !important;
+}
+
+/*TITOLI*/
+#formid_centro .Titolo1
+{
+    clear: both;
+    padding: 5px 0px 5px 10px;
+    margin: 2px 0;
+    font-size: 1.308em;
+    background-color: #E4E3E0;
+    border: 1px solid #9F9F9F;
+}
+
+#formid_centro .Titolo2
+{
+    display: block;
+    padding: 5px 5px 5px 11px;
+    border-bottom: dotted 1px #999;
+    margin-bottom: 3px;
+    background: transparent url(/immagini/simboli/blu.gif);
+    background-repeat: no-repeat;
+    background-position: 0px 12px;
+    font-size: 1.154em;
+    font-weight: normal;
+    clear: both;
+}
+
+#formid_centro a.Titolo2, #formid_centro a:hover.Titolo2
+{
+    color: Black;
+}
+
+#formid_centro .Titolo3
+{
+    border-bottom: solid 1px #cccccc;
+    padding: 3px 1%;
+    margin-bottom: 3px;
+    margin-top: 5px; /*font-style: italic;*/
+    background-color: #f7f7f7;
+    font-size: 150%;
+    clear: both;
+}
+
+#formid_centro .Titolo4
+{
+    border-bottom: solid 1px #cccccc;
+    padding-bottom: 3px;
+    margin-bottom: 3px;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+
+#BoxHeaderContenuto #BoxRigaInferiore IMG
+{
+    float: right !important;
+}
+
+#BoxHeaderContenuto #BoxRigaInferiore SPAN
+{
+    float: right !important;
+}
+
+
+#boxTotale #VotiContenuto
+{
+    float: right !important;
+}
+
+#boxTotale #VotiContenuto ul
+{
+    float: left !important;
+}
+
+#boxTotale #VotiContenuto ul li
+{
+    float: left !important;
+}
+
+#boxTotale #VotiContenuto #VotiContenuto_Sx
+{
+    float: left !important;
+}
+
+#boxTotale #VotiContenuto #VotiContenuto_Sx_Testo
+{
+    float: left !important;
+}
+
+#boxTotale #VotiContenuto .VotiContenuto_Sx_Immagini
+{
+    float: left !important;
+}
+
+#boxTotale #VotiContenuto #VotiContenuto_Dx
+{
+    float: left !important;
+}
+
+#boxTotale #VotiContenuto #VotiContenuto_Dx .VotiContenuto_Dx_Testo
+{
+    float: left !important;
+}
+
+#boxTotale #VotiContenuto #VotiContenuto_Dx .VotiContenuto_Dx_Testo_valutazioni
+{
+    float: left !important;
+}
+
+#boxTotale #VotiContenuto #VotiContenuto_Dx .VotiContenuto_Dx_Immagini
+{
+    float: left !important;
+}
+
+/*********************************************************************/
+/**** albo pretorio ********************************************************/
+/*********************************************************************/
+
+#Alboricerca
+{
+    display: none;
+}
+
+#BoxServizioGenerico .lente
+{
+    display: none;
+}
+
+#BoxServizioGenerico .br
+{
+    display: none;
+}
+
+#BoxServizioGenerico .ImmagineAlbo
+{
+    float: right !important;
+}
+
+#BoxServizioGenerico .documenti .numerodettagliodocumenti
+{
+    float: left !important;
+}
+
+#BoxServizioGenerico .categoriaAlbo
+{
+    margin-left: 5px;
+}
+
+/*********************************************************************/
+/****INFORMAZIONI********************************************************/
+/*********************************************************************/
+
+#boxInformazioniDettaglio .Immagine {
+    float: right !important;
+}
+
+/*********************************************************************/
+/**** GESTIONE TURNI E REPERIBILITA' *********************************/
+/*********************************************************************/
+
+#boxGestioneTurni
+{
+    font-size: 80%;    
+}
+
+#boxGestioneTurni #BoxTabs,
+#boxGestioneTurni #BoxFunzioni, 
+#boxGestioneTurni .boxMesi .mesePrecedente,
+#boxGestioneTurni .boxMesi .meseSuccessivo,
+#boxGestioneTurni IMG.modificaMedico,
+#boxGestioneTurni IMG.nuovoMedico,
+#boxGestioneTurni .pulsante,
+#boxGestioneTurni .cercaReperibilita
+{    
+    display: none !important;
+}
+
+#boxGestioneTurni TD
+{
+    padding: 0;
+}
+
+#boxGestioneTurni TR
+{
+    /*page-break-inside: avoid;*/
+}
+
+#BoxServizioGenerico .Riga .Colonna1, #BoxServizioGenerico .Riga .Colonna2, #BoxServizioGenerico .Riga .Colonna3, #BoxServizioGenerico .Riga .Colonna4, #BoxServizioGenerico .Riga .Colonna5, #BoxServizioGenerico .Riga .Colonna6, #BoxServizioGenerico .Riga .Colonna7, #BoxServizioGenerico .Riga .Colonna8
+{
+    float:left!important;
+    padding:1em 0px!important;
+}
+
+#BoxServizioGenerico .Riga
+{
+    background-color: Transparent!important;
+    color: Black!important;
+}
+
+
+

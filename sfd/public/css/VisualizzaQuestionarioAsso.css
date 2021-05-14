@@ -1,0 +1,5 @@
+div.page_break + div.page_break{
+    page-break-before: always;
+}
+
+.page_break { page-break-before: always; }

@@ -1,0 +1,305 @@
+FMM - Form Model Manager
+
+Contesto
+--------
+Form Model Manager opera su progetti React client side fornendo strumenti per lo sviluppo delle form HTML.
+
+Dipendenze:
+Si utilizzano 
+- react-bootstrap (0.32.4)
+- lodash (4.17.20)
+- validator (13.1.17)
+
+La dipendenza da react-bootstrap è limitata ad alcune componenti da utilizzare nelle form:
+- Field (campo di input generico renderizzato con Bootstrap)
+- SelectField (campo di tipo select)
+- AutocompleteField (campo di tipo autocomplete)
+Se è accettabile riscriversi questi tre componenti allora si può eliminare la dipendenza da react-bootstrap.
+
+Scopo
+-----
+fornire allo sviluppatore strumenti per:
+- gestire la validazione dei campi in una form (sia errori che warning)
+- associare un modello di dati ai campi di una form
+- fornire alcune funzioni di utilità come il reset dei valori di una form, impostarne un valore, sapere quali campi sono stati modificati..
+- fornire alcuni widget di base da utilizzare nelle form (Field, SelectField e Autocomplete)
+
+In particolare l'oggetto principale che viene fornito (<Form>) inserisce nella pagina un elemento HTML form e fornisce una serie di servizi.
+
+Installazione
+-------------
+Occorre copiare dal progetto Servizi a Fruizione Diffusa di Bari la cartella src/fmm e rispettare le dipendenze elencate sopra.
+
+Utilizzo
+--------
+L'oggetto principale di questo framework è un componente <Form> che rappresenta un form HTML ed è possibile inserire questo oggetto form sia in container che in componenti.
+
+Esempio di oggetto form: (alcune cose verranno spiegate più avanti)
+
+import { Field, Form, ValidationSummary } from '../fmm/forms'; // La posizione della cartella dipende dalla struttura del progetto
+
+..
+
+<Form values={values} namespace={formNamespace} config={formConfig} onFormSubmit={onFormSubmitHandler} render={
+    (form, getFieldProps) => {
+        return (
+            <div className="filtro-interventi__wrapper">
+                <div className="row">
+                    <div className="col-sm-12 col-md-6">
+                        <Field type="text" {...getFieldProps('cognome')} />
+                    </div>
+                    <div className="col-sm-12 col-md-6">
+                        <Field type="text" {...getFieldProps('nome')} />
+                    </div>
+                    <div className="col-sm-12">
+                        <Field type="text" {...getFieldProps('codiceFiscale')} />
+                    </div>
+                </div>
+                {(form.hasErrors || form.hasWarnings) && <div className="row">
+                    <div className="col-sm-12">
+                        <ValidationSummary namespace={formNamespace} form={form} cssClass="" />
+                    </div>
+                </div>}
+                <div className="row mt-2 mb-2">
+                    <div className="col-sm-12 text-center">
+                        <button type="submit" className="btn btn-md btn-success mr-3" form={formNamespace}>Cerca</button>
+                        <button type="button" className="btn btn-md btn-default" onClick={form.resetForm}>Pulisci</button>
+                    </div>
+                </div>
+            </div>
+        );
+    }
+} />
+
+Questo componente ha bisogno dei seguenti oggetti passati come attributi.
+
+1) namespace: 
+Il namespace è obbligatorio, viene usato come id e name della form e fornisce uno spazio dei nomi al form ma anche a tutti i campi contenuti
+
+2) config: 
+Anche la configurazione è obbligatoria ed è un oggetto che contiene la configurazione dei campi contenuti nella form. 
+
+Nella configurazione si possono impostare:
+  * Nome del campo
+  * Etichetta del campo
+  * Validatori per il campo
+  * Valori di default per il campo
+
+Esempio di config: 
+
+const fieldConfig = {
+    fields: {
+        cognome: {
+            default: "Rossi", // all'apertura della form il valore preimpostato sarà questo
+            label: "Cognome",
+            validators: {
+                errors: {
+                    requiredIf: {
+                        message: 'Il campo è obbligatorio.',
+                        predicate: (value, values) => {
+                            return !get(values, 'codiceFiscale');
+                        }
+                    }
+                }
+            }
+        }
+    }
+}  
+
+Un dettaglio importante è che i campi possono (ma non è obbligatorio) avere un percorso.
+Ad esempio se abbiamo i campi "presenza di invalidità" e "% di invalidità" questi possono essere espressi in due modi diversi:
+
+{
+    fields: {
+        presenzaInvalidita: { .. },
+        percentualeInvalidita: { .. }
+}
+
+oppure:
+
+{
+    fields: {
+        invalidita: {
+            presenza: { .. },
+            percentuale: { .. }
+        }
+    }
+}
+
+Questa scelta ha conseguenze che verranno dettagliate nel seguito.
+Le due scelte sono equivalenti come effort di gestione del form, sono solo differenti stilisticamente.
+
+3) values: 
+facoltativo, sono i valori iniziali che verranno impostati nei campi della form TODO valori innestati
+
+Esempio di values:
+
+{
+    "ambito": null,
+    "area": {
+        id: 12,
+        nome: "Nome area"
+    },
+    "assistito": null,
+    "attivitaLavorativa": null,
+    "attivitaLavorativaPrecedente": null,
+    "dataFineIntervento": null,
+    "dataInizioIntervento": null,
+    "id": 0
+    "invalidita": {
+        "presenza": true,
+        "percentuale": 50
+    }
+    "note": null
+    "numeroComponenti": 0,
+    "presenzaAnziani": false,
+    "presenzaDisabili": false,
+    "servizio": null,
+    "titolo": null,
+}
+
+Come si vede dall'esempio ci sono due casi in cui non abbiamo un valore secco associato ad un nome di campo.
+Il primo (area) è dovuto al fatto che il campo area è gestito tramite una select.
+
+SelectField e AutocompleteField vogliono e restituiscono come valore infatti una struttura tipo
+{
+    id: <numero>,
+    nome: <stringa>
+}
+
+Il secondo caso, che sembra molto simile al precedente ma è differente, è relativo al campo invalidità.
+Questo caso si riferisce a due campi definiti in questo modo nell'oggetto config:
+
+{
+    fields: {
+        invalidita: {
+            presenza: {
+                label: .. ,
+                default: .. ,
+                validators: .. ,
+            },
+            percentuale: {
+                label: .. ,
+                default: .. ,
+                validators: .. ,
+            },
+        }
+    }
+}
+
+4) readOnly: 
+facoltativo, booleano, il form lo utilizza se presente per disabilitare le validazioni dei campi
+
+5) onFormSubmit: 
+obbligatorio, deve contenere la funzione che verrà chiamata dopo la pressione di un tasto submit della form 
+La funzione verrà chiamata passando ad essa un unico parametro, ovvero i valori della form nel formato descritto al punto 3) values.
+
+6) render: 
+obbligatorio, è la funzione che si incarica di disegnare il contenuto della form
+
+Un esempio di funzione render è stato presentato nell'esempio iniziale e lo riportiamo qui:
+
+(form, getFieldProps) => {
+    return (
+        <div className="filtro-interventi__wrapper">
+            <div className="row">
+                <div className="col-sm-12 col-md-6">
+                    <Field type="text" {...getFieldProps('cognome')} />
+                </div>
+                <div className="col-sm-12 col-md-6">
+                    <Field type="text" {...getFieldProps('nome')} />
+                </div>
+                <div className="col-sm-12">
+                    <Field type="text" {...getFieldProps('codiceFiscale')} />
+                </div>
+            </div>
+            {(form.hasErrors || form.hasWarnings) && <div className="row">
+                <div className="col-sm-12">
+                    <ValidationSummary namespace={formNamespace} form={form} cssClass="" />
+                </div>
+            </div>}
+            <div className="row mt-2 mb-2">
+                <div className="col-sm-12 text-center">
+                    <button type="submit" className="btn btn-md btn-success mr-3" form={formNamespace}>Cerca</button>
+                    <button type="button" className="btn btn-md btn-default" onClick={form.resetForm}>Pulisci</button>
+                </div>
+            </div>
+        </div>
+        )
+}
+
+I parametri che vengono passati automaticamente a questa funzione sono:
+
+- l'oggetto "form" contenente proprietà e metodi relativi al form, come segue.
+
+const form: {
+    fields: any;
+    labels: any;
+    values: any;
+    isValid: any;
+    hasErrors: any;
+    hasWarnings: any;
+    submitted: any;
+    getValue: (fieldName: any) => any;
+    getTouched: (fieldName: any) => any;
+    getErrors: (fieldName: any) => any;
+    getWarnings: (fieldName: any) => any;
+    setFieldValue: (fieldName: any, fieldValue: any) => void;
+    resetForm: (e: any) => void;
+}
+
+- la funzione getFieldProps a cui occorre passare come parametro il nome del campo di cui si vogliono ottenere le proprietà.
+Questo nome di campo deve corrispondere al nome di campo passato nell'oggetto config passato alla form in fase di inizializzazione.
+
+Caso speciale: campi definiti in questo modo nella configurazione passata alla form
+
+{
+    fields: {
+        invalidita: {
+            presenza: {
+                label: .. ,
+                default: .. ,
+                validators: .. ,
+            },
+            percentuale: {
+                label: .. ,
+                default: .. ,
+                validators: .. ,
+            },
+        }
+    }
+}
+
+In questo caso il nome di campo passato alla getFieldProps sarà rispettivamente invalidita.presenza e invalidita.percentuale .
+In buona sostanza "invalidita" non è un campo ma un contenitore per gli altri due.
+
+Proprietà e metodi ritornati da getFieldProps sono i seguenti:
+
+(property) getFieldProps: (fieldName: any) => {
+    onChange: (e: any) => void;
+    id: any;
+    name: any;
+    label: any;
+    value: any;
+    validation: {
+        touched: any;
+        error: any;
+        warning: any;
+    };
+}
+
+Utilizzo in un contesto con hook
+--------------------------------
+Nel caso si renda necessario utilizzare l'oggetto Form di FMM in un contesto dove sono permessi solo gli hook è possibile farlo; nel caso consultare il sorgente di Form.js all'interno della cartella src/components/forms
+
+Resoconto di validazione
+------------------------
+I risultati della validazione, che normalmente sono visualizzati in linea sul campo in cui c'è un errore o warning, possono essere anche visualizzati (in aggiunta) all'interno della form tramite l'apposito componente ValidationSummary.
+Normalmente questo componente è inserito nella form con questo formato, già mostrato nell'esempio completo:
+
+{(form.hasErrors || form.hasWarnings) && <div className="row">
+    <div className="col-sm-12">
+        <ValidationSummary namespace={formNamespace} form={form} cssClass="" />
+    </div>
+</div>}
+

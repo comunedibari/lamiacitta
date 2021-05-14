@@ -1,0 +1,15 @@
+/* SPDX-License-Identifier: AGPL-3.0-or-later */
+.error {
+    border-color: red;
+    border-width: 4px;
+}
+
+.cbdiverror {
+    color: red;
+}
+
+.selectedlistitem {
+    border-color: #0500BB;
+    border-style: dashed;
+    border-width: medium;
+}

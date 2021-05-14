@@ -1,0 +1,40 @@
+/* per il break page della stampa */
+div.page_break + div.page_break{
+    page-break-before: always;
+}
+
+.page_break { page-break-before: always; }
+
+
+/* !important;   per dargli precedenza*/
+path.ygrid.crisp:nth-child(odd) {
+    stroke: transparent !important;
+}
+
+ /* usato per le tabelle */
+table {
+    width: 100%;
+}
+ 
+td {
+    text-align: center;
+    height: 30px;
+    vertical-align: middle;
+    width: 20%;
+    border: 1px solid;
+}
+
+ /* usato per la classe  */
+.tableWrapper {
+    padding: 0 56px;
+}
+.labels {
+    float: left;
+}
+.onelabel {
+    line-height: 30px;
+    display: table;
+    clear: both;
+    vertical-align: middle;
+}
+/* # usato per un id */

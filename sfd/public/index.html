@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 1.2em">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+
+  <!-- Inizio PWA -->
+  <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+  <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+
+
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+  <meta name="Description"
+    content="%REACT_APP_TITLE% - Progetti di Impresa: comunicazione, informazione e servizi, e-government ecc.">
+  <meta name="DC.Description"
+    content="%REACT_APP_TITLE% - Progetti di Impresa: comunicazione, informazione e servizi, e-government ecc.">
+  <meta name="keywords" content="italia, rete, civica, sito">
+  <meta name="Revisit-after" content="7 days">
+  <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+  <meta name="robots" content="all,index">
+  <meta name="google-site-verification" content="PAHNHiFIFM5Jiz8mjKEIWIKRUwYuQkiOYOhj2vvEbyY">
+
+  <meta property="og:title" content="%REACT_APP_WEBSITE_NAME%">
+  <meta property="og:description"
+    content="%REACT_APP_TITLE% - Progetti di Impresa: comunicazione, informazione e servizi, e-government ecc.">
+  <meta property="og:url" content="%PUBLIC_URL%/index.html">
+  <meta property="og:image" content="%PUBLIC_URL%/img/favicon/apple-touch-icon-120x120.png">
+
+  <link rel="image_src" href="%PUBLIC_URL%/img/favicon/apple-touch-icon-120x120.png">
+
+  <link rel="shortcut icon" href="%PUBLIC_URL%/img/favicon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="57x57" href="%PUBLIC_URL%/img/favicon/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="%PUBLIC_URL%/img/favicon/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="%PUBLIC_URL%/img/favicon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="%PUBLIC_URL%/img/favicon/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="%PUBLIC_URL%/img/favicon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="%PUBLIC_URL%/img/favicon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="%PUBLIC_URL%/img/favicon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="%PUBLIC_URL%/img/favicon/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/img/favicon/apple-touch-icon-180x180.png">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
+  <meta name="apple-mobile-web-app-title" content="%REACT_APP_TITLE%">
+
+  <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/img/launch-640x1136.png"
+    media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/img/launch-750x1294.png"
+    media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/img/launch-1242x2148.png"
+    media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/img/launch-1125x2436.png"
+    media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/img/launch-1536x2048.png"
+    media="(min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/img/launch-1668x2224.png"
+    media="(min-device-width: 834px) and (max-device-width: 834px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/img/launch-2048x2732.png"
+    media="(min-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="icon" type="image/png" href="%PUBLIC_URL%/img/favicon/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="%PUBLIC_URL%/img/favicon/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="%PUBLIC_URL%/img/favicon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="%PUBLIC_URL%/img/favicon/android-chrome-36x36.png" sizes="36x36">
+  <link rel="icon" type="image/png" href="%PUBLIC_URL%/img/favicon/android-chrome-48x48.png" sizes="48x48">
+  <link rel="icon" type="image/png" href="%PUBLIC_URL%/img/favicon/android-chrome-72x72.png" sizes="72x72">
+  <link rel="icon" type="image/png" href="%PUBLIC_URL%/img/favicon/android-chrome-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="%PUBLIC_URL%/img/favicon/android-chrome-144x144.png" sizes="144x144">
+  <link rel="icon" type="image/png" href="%PUBLIC_URL%/img/favicon/android-chrome-192x192.png" sizes="192x192">
+
+  <meta name="application-name" content="%REACT_APP_TITLE%">
+
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="%PUBLIC_URL%/img/favicon/mstile-144x144.png">
+  <meta name="msapplication-square70x70logo" content="%PUBLIC_URL%/img/favicon/mstile-70x70.png">
+  <meta name="msapplication-square150x150logo" content="%PUBLIC_URL%/img/favicon/mstile-150x150.png">
+  <meta name="msapplication-wide310x150logo" content="%PUBLIC_URL%/img/favicon/mstile-310x150.png">
+  <meta name="msapplication-square310x310logo" content="%PUBLIC_URL%/img/favicon/mstile-310x310.png">
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+  <link rel="mask-icon" href="%PUBLIC_URL%/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <!-- Fine PWA -->
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300italic,300,400italic,600,600italic,700,700italic,900"
+    rel="stylesheet" type="text/css">
+  <link rel="stylesheet" title="Carattere normale" type="text/css" media="screen" href="%PUBLIC_URL%/css/struttura.css">
+
+  <!--link rel="stylesheet" type="text/css" media="screen" href="%PUBLIC_URL%/css/bootstrap/bootstrap.min.css"-->
+  <!-- Inclusione Bootstrap 3.3.7 -->
+  <link rel="stylesheet" href="%PUBLIC_URL%/css/bootstrap-3.3.7.min.css">
+  <link rel="stylesheet" href="%PUBLIC_URL%/css/bootstrap-3.3.7-theme.min.css">
+  <!-- Inclusione Bootstrap 4.2.1 -->
+  <!--link
+	  rel="stylesheet"
+	  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+	  integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+	  crossorigin="anonymous"
+  /-->
+  <!-- Fine inclusione Bootstrap. Documentazione su https://react-bootstrap.github.io/getting-started/introduction -->
+
+  <link rel="stylesheet" href="%PUBLIC_URL%/css/all.css">
+
+  <link rel="stylesheet" type="text/css" media="screen" href="%PUBLIC_URL%/css/ita-bootstrap.css">
+  <!--link rel="stylesheet" type="text/css" media="screen" href="%PUBLIC_URL%/fonts/font-awesome.min.css"-->
+
+  <link rel="stylesheet" title="Carattere normale" type="text/css" media="screen"
+    href="%PUBLIC_URL%/css/0-template-agid_modello_11947_16589.css">
+
+  <link rel="stylesheet" type="text/css" media="screen" href="%PUBLIC_URL%/css/app-bootstrap.css">
+
+  <link rel="alternate stylesheet" title="Carattere grande" type="text/css" media="screen"
+    href="%PUBLIC_URL%/css/accessibilita/caratteregrande.css" disabled="">
+  <link rel="alternate stylesheet" title="Contrasto elevato" type="text/css" media="screen"
+    href="%PUBLIC_URL%/css/accessibilita/fortecontrasto.css" disabled="">
+  <link rel="alternate stylesheet" title="Senza grafica" type="text/css" media="screen"
+    href="%PUBLIC_URL%/css/accessibilita/senzagrafica.css" disabled="">
+  <link rel="stylesheet" href="%PUBLIC_URL%/css/nyroModal.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="%PUBLIC_URL%/css/tipsy.css">
+
+  <link rel="stylesheet" href="%PUBLIC_URL%/css/jquery.tagit.css">
+  <link rel="stylesheet" href="%PUBLIC_URL%/css/tagit.ui-zendesk.css">
+
+  <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+  <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+  <title>%REACT_APP_TITLE%</title>
+
+</head>
+
+<body>
+  <noscript>
+    Il supporto Javascript è disabilitato sul tuo browser. E' necessario abilitare Javascript per accedere a questa
+    funzionalità.
+  </noscript>
+  <div id="root"></div>
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+</body>
+<script type="text/javascript">
+
+  window.onload = function () {
+    var body = document.body;
+    var html = document.documentElement;
+
+    var height = Math.max(body.scrollHeight, body.offsetHeight,
+      html.clientHeight, html.scrollHeight, html.offsetHeight);
+
+    var lastScrollTop = 0;
+
+    window.addEventListener("scroll", function () {
+      var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+      if (scrollTop > lastScrollTop) {
+        if ((scrollTop > 40)) {
+          addClass(document.body, "onscroll");
+        }
+      }
+      else {
+        if ((scrollTop < 40)) {
+          removeClass(document.body, "onscroll");
+        }
+        // upscroll code
+      }
+    });
+  };
+
+  function hasClass(el, className) {
+    if (el.classList)
+      return el.classList.contains(className)
+    else
+      return !!el.className.match(new RegExp('(\\s|^)' + className + '(\\s|$)'))
+  }
+
+  function addClass(el, className) {
+    if (el.classList)
+      el.classList.add(className)
+    else if (!hasClass(el, className)) el.className += " " + className
+  }
+
+  function removeClass(el, className) {
+    if (el.classList)
+      el.classList.remove(className)
+    else if (hasClass(el, className)) {
+      var reg = new RegExp('(\\s|^)' + className + '(\\s|$)')
+      el.className = el.className.replace(reg, ' ')
+    }
+  }
+</script>
+
+</html>

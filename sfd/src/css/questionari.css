@@ -1,0 +1,15 @@
+/* SPDX-License-Identifier: AGPL-3.0-or-later */
+.previouslyselected {
+    border-color: darkgrey; 
+    border-width: 3px; 
+    border-style: dashed;
+}
+
+.selected {
+    border-color: black; 
+    border-width: 3px; 
+    border-style: solid;
+}
+
+.striped button:nth-child(even) {background: #eee}
+.striped button:nth-child(odd) {background: #fff}

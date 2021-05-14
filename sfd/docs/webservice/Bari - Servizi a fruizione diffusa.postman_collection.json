@@ -1,0 +1,1741 @@
+{
+	"info": {
+		"_postman_id": "5e79a44d-30e7-4e4c-ac9e-9b710e2b1444",
+		"name": "Bari - Servizi a fruizione diffusa",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Get token\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    var result = JSON.parse(jsonData.data);\r",
+							"    pm.environment.set(\"ACCESS_TOKEN\", result.token);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"token\": \"\",\r\n\t\"method\": \"login\",\r\n\t\"param\": {\r\n\t\t\"username\": \"bari\",\r\n\t\t\"password\": \"Kdjue89k\"\r\n\t}\r\n}"
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/ServiziFruizioneDiffusa.aspx",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"ServiziFruizioneDiffusa.aspx"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"token\": \"\",\r\n\t\"method\": \"login\",\r\n\t\"param\": {\r\n\t\t\"username\": \"bari\",\r\n\t\t\"password\": \"Kdjue89k\"\r\n\t}\r\n}"
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/ServiziFruizioneDiffusa.aspx",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"ServiziFruizioneDiffusa.aspx"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET,POST,OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 20 Dec 2020 16:48:08 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "176"
+						}
+					],
+					"cookie": [],
+					"body": "{\"result\":{\"success\":true,\"code\":0,\"message\":\"Success\"},\"data\":\"{\\\"token\\\":\\\"CM(W3Q3sm7cg11Ikc1y£\\\",\\\"username\\\":\\\"bari\\\",\\\"nome\\\":\\\"Utente\\\",\\\"cognome\\\":\\\"Amministratore\\\"}\"}"
+				}
+			]
+		},
+		{
+			"name": "modificaPassword",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Get token\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    var result = JSON.parse(jsonData.data);\r",
+							"    pm.environment.set(\"ACCESS_TOKEN\", result.token);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"token\": \"\",\r\n\t\"method\": \"login\",\r\n\t\"param\": {\r\n\t\t\"username\": \"bari\",\r\n\t\t\"password\": \"TMP_924468\",\r\n        \"nuova_password\": \"Kdjue89k\"\r\n\t}\r\n}"
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/ServiziFruizioneDiffusa.aspx",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"ServiziFruizioneDiffusa.aspx"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"token\": \"\",\r\n\t\"method\": \"login\",\r\n\t\"param\": {\r\n\t\t\"username\": \"bari\",\r\n\t\t\"password\": \"bari2020\"\r\n\t}\r\n}"
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/ServiziFruizioneDiffusa.aspx",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"ServiziFruizioneDiffusa.aspx"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "2.0.50727"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "userToken=9aZ25n$jF$v!qoV3|BSM; expires=Mon, 23-Nov-2020 11:29:30 GMT; path=/"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET,POST"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "*"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 23 Nov 2020 10:29:30 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "175"
+						}
+					],
+					"cookie": [],
+					"body": "{\"result\":{\"success\":true,\"code\":0,\"message\":\"Success\"},\"data\":\"{\\\"token\\\":\\\"9aZ25n$jF$v!qoV3|BSM\\\",\\\"username\\\":\\\"bari\\\",\\\"nome\\\":\\\"Utente\\\",\\\"cognome\\\":\\\"Amministratore\\\"}\"}"
+				}
+			]
+		},
+		{
+			"name": "generaRecuperoPassword",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Get token\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    var result = JSON.parse(jsonData.data);\r",
+							"    pm.environment.set(\"ACCESS_TOKEN\", result.token);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"68B100FC-41D5-4AEF-8BCE-87D95E29C748\",\r\n    \"method\": \"generaRecuperoPassword\",\r\n    \"param\": {\r\n\t\t\"user\": \"bari\",\r\n\t\t\"email\": \"carlos@progettidiimpresa.it\"\r\n\t}\r\n}"
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/ServiziUtente.aspx",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"ServiziUtente.aspx"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"token\": \"\",\r\n\t\"method\": \"login\",\r\n\t\"param\": {\r\n\t\t\"username\": \"bari\",\r\n\t\t\"password\": \"bari2020\"\r\n\t}\r\n}"
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/ServiziFruizioneDiffusa.aspx",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"ServiziFruizioneDiffusa.aspx"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "2.0.50727"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "userToken=9aZ25n$jF$v!qoV3|BSM; expires=Mon, 23-Nov-2020 11:29:30 GMT; path=/"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET,POST"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "*"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 23 Nov 2020 10:29:30 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "175"
+						}
+					],
+					"cookie": [],
+					"body": "{\"result\":{\"success\":true,\"code\":0,\"message\":\"Success\"},\"data\":\"{\\\"token\\\":\\\"9aZ25n$jF$v!qoV3|BSM\\\",\\\"username\\\":\\\"bari\\\",\\\"nome\\\":\\\"Utente\\\",\\\"cognome\\\":\\\"Amministratore\\\"}\"}"
+				}
+			]
+		},
+		{
+			"name": "confermaRecuperoPassword",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Get token\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    var result = JSON.parse(jsonData.data);\r",
+							"    pm.environment.set(\"ACCESS_TOKEN\", result.token);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"token\": \"68B100FC-41D5-4AEF-8BCE-87D95E29C748\",\r\n\t\"method\": \"confermaRecuperoPassword\",\r\n\t\"param\": {\r\n        \"code\":\"39-663922\"\r\n\t}\r\n}"
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/ServiziUtente.aspx",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"ServiziUtente.aspx"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"token\": \"\",\r\n\t\"method\": \"login\",\r\n\t\"param\": {\r\n\t\t\"username\": \"bari\",\r\n\t\t\"password\": \"bari2020\"\r\n\t}\r\n}"
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/ServiziFruizioneDiffusa.aspx",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"ServiziFruizioneDiffusa.aspx"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "2.0.50727"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "userToken=9aZ25n$jF$v!qoV3|BSM; expires=Mon, 23-Nov-2020 11:29:30 GMT; path=/"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET,POST"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "*"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 23 Nov 2020 10:29:30 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "175"
+						}
+					],
+					"cookie": [],
+					"body": "{\"result\":{\"success\":true,\"code\":0,\"message\":\"Success\"},\"data\":\"{\\\"token\\\":\\\"9aZ25n$jF$v!qoV3|BSM\\\",\\\"username\\\":\\\"bari\\\",\\\"nome\\\":\\\"Utente\\\",\\\"cognome\\\":\\\"Amministratore\\\"}\"}"
+				}
+			]
+		},
+		{
+			"name": "getConfigurazione",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"token\": \"{{ACCESS_TOKEN}}\",\r\n\t\"method\": \"getConfigurazione\",\r\n\t\"param\": {}\r\n}"
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/ServiziFruizioneDiffusa.aspx",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"ServiziFruizioneDiffusa.aspx"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Configurazione",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"token\": \"{{ACCESS_TOKEN}}\",\r\n\t\"method\": \"getConfigurazione\",\r\n\t\"param\": {}\r\n}"
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/ServiziFruizioneDiffusa.aspx",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"ServiziFruizioneDiffusa.aspx"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "2.0.50727"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET,POST"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "*"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 23 Nov 2020 10:31:09 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "63"
+						}
+					],
+					"cookie": [],
+					"body": "{\"result\":{\"success\":true,\"code\":0,\"message\":\"OK\"},\"data\":\"{}\"}"
+				}
+			]
+		},
+		{
+			"name": "getOperatore",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"token\": \"{{ACCESS_TOKEN}}\",\r\n\t\"method\": \"getOperatore\",\r\n\t\"param\": {}\r\n}"
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/ServiziFruizioneDiffusa.aspx",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"ServiziFruizioneDiffusa.aspx"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ricercaValori",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"token\": \"{{ACCESS_TOKEN}}\",\r\n\t\"method\": \"ricercaValori\",\r\n\t\"param\": {\r\n        \"tipo\": \"comune\", // comune, provincia, nazione, cittadinanza\r\n        \"ricerca\": \"mod%\"\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/ServiziFruizioneDiffusa.aspx",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"ServiziFruizioneDiffusa.aspx"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "calcolaCodiceFiscale",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"{{ACCESS_TOKEN}}\",\r\n    \"method\": \"calcolaCodiceFiscale\",\r\n    \"param\": {\r\n        \"nome\": \"Mario\",\r\n        \"cognome\": \"Rossi\",\r\n        \"dataNascita\": \"01-01-1925\",\r\n        \"sesso\": \"M\", //\"M\" o \"F\"\r\n        \"luogoNascita\": {\r\n            \"nazione\": {\r\n                \"id\": 5,\r\n                \"nome\": \"ITALIA\"\r\n            },\r\n            \"provincia\": {\r\n                \"id\": 52,\r\n                \"nome\": \"Modena\"\r\n            },\r\n            \"comune\": {\r\n                \"id\": 6809,\r\n                \"nome\": \"MODENA\"\r\n            },\r\n            \"comuneEstero\": \"\"\r\n        }\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/ServiziFruizioneDiffusa.aspx",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"ServiziFruizioneDiffusa.aspx"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Configurazione",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"token\": \"{{ACCESS_TOKEN}}\",\r\n\t\"method\": \"getConfigurazione\",\r\n\t\"param\": {}\r\n}"
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/ServiziFruizioneDiffusa.aspx",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"ServiziFruizioneDiffusa.aspx"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "2.0.50727"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET,POST"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "*"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 23 Nov 2020 10:31:09 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "63"
+						}
+					],
+					"cookie": [],
+					"body": "{\"result\":{\"success\":true,\"code\":0,\"message\":\"OK\"},\"data\":\"{}\"}"
+				}
+			]
+		},
+		{
+			"name": "getAssistiti",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "x-mock-response-name",
+						"type": "text",
+						"value": "Elenco Interventi - OK",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"token\": \"{{ACCESS_TOKEN}}\",\r\n\t\"method\": \"getAssistiti\",\r\n    \"param\": {\r\n        \"filtro\": {\r\n            \"cognome\": \"\",\r\n            \"nome\": \"\",\r\n            \"codiceFiscale\": \"CLS92\"\r\n        },\r\n        \"ordinamento\": {\r\n            \"field\": \"nome\",\r\n            \"asc\": false\r\n        },\r\n        \"paginazione\": {\r\n            \"page\": 1,\r\n            \"limit\": 20\r\n        }\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/ServiziFruizioneDiffusa.aspx",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"ServiziFruizioneDiffusa.aspx"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Elenco Interventi - OK",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"token\": \"{{ACCESS_TOKEN}}\",\r\n\t\"method\": \"getInterventi\",\r\n    \"param\": {}\r\n}"
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/ServiziFruizioneDiffusa.aspx",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"ServiziFruizioneDiffusa.aspx"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "2.0.50727"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET,POST"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "*"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 23 Nov 2020 10:49:55 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1238"
+						}
+					],
+					"cookie": [],
+					"body": "{\"result\":{\"success\":true,\"code\":0,\"message\":\"OK\"},\"data\":\"[{\\\"nome\\\":\\\"Mario\\\",\\\"cognome\\\":\\\"Rossi\\\",\\\"dataNascita\\\":\\\"01 - 01 - 1990\\\",\\\"codiceFiscale\\\":\\\"XXXXXXXXXXXXX\\\",\\\"dataInizioIntervento\\\":\\\"01 - 01 - 1999\\\",\\\"dataFineIntervento\\\":\\\"01-01-2000\\\"},{\\\"nome\\\":\\\"Mario\\\",\\\"cognome\\\":\\\"Rossi\\\",\\\"dataNascita\\\":\\\"01 - 01 - 1990\\\",\\\"codiceFiscale\\\":\\\"XXXXXXXXXXXXX\\\",\\\"dataInizioIntervento\\\":\\\"01 - 01 - 1999\\\",\\\"dataFineIntervento\\\":\\\"01-01-2000\\\"},{\\\"nome\\\":\\\"Mario\\\",\\\"cognome\\\":\\\"Rossi\\\",\\\"dataNascita\\\":\\\"01 - 01 - 1990\\\",\\\"codiceFiscale\\\":\\\"XXXXXXXXXXXXX\\\",\\\"dataInizioIntervento\\\":\\\"01 - 01 - 1999\\\",\\\"dataFineIntervento\\\":\\\"01-01-2000\\\"},{\\\"nome\\\":\\\"Mario\\\",\\\"cognome\\\":\\\"Rossi\\\",\\\"dataNascita\\\":\\\"01 - 01 - 1990\\\",\\\"codiceFiscale\\\":\\\"XXXXXXXXXXXXX\\\",\\\"dataInizioIntervento\\\":\\\"01 - 01 - 1999\\\",\\\"dataFineIntervento\\\":\\\"01-01-2000\\\"},{\\\"nome\\\":\\\"Mario\\\",\\\"cognome\\\":\\\"Rossi\\\",\\\"dataNascita\\\":\\\"01 - 01 - 1990\\\",\\\"codiceFiscale\\\":\\\"XXXXXXXXXXXXX\\\",\\\"dataInizioIntervento\\\":\\\"01 - 01 - 1999\\\",\\\"dataFineIntervento\\\":\\\"01-01-2000\\\"},{\\\"nome\\\":\\\"Mario\\\",\\\"cognome\\\":\\\"Rossi\\\",\\\"dataNascita\\\":\\\"01 - 01 - 1990\\\",\\\"codiceFiscale\\\":\\\"XXXXXXXXXXXXX\\\",\\\"dataInizioIntervento\\\":\\\"01 - 01 - 1999\\\",\\\"dataFineIntervento\\\":\\\"01-01-2000\\\"}]\"}"
+				}
+			]
+		},
+		{
+			"name": "getAssistito",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "x-mock-response-name",
+						"type": "text",
+						"value": "Elenco Interventi - OK",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"token\": \"{{ACCESS_TOKEN}}\",\r\n\t\"method\": \"getAssistito\",\r\n    \"param\": {\r\n        \"id\": 163423,\r\n        \"codiceFiscale\": \"TSTCLS92T12Z131L\"\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/ServiziFruizioneDiffusa.aspx",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"ServiziFruizioneDiffusa.aspx"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Elenco Interventi - OK",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"token\": \"{{ACCESS_TOKEN}}\",\r\n\t\"method\": \"getInterventi\",\r\n    \"param\": {}\r\n}"
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/ServiziFruizioneDiffusa.aspx",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"ServiziFruizioneDiffusa.aspx"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "2.0.50727"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET,POST"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "*"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 23 Nov 2020 10:49:55 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1238"
+						}
+					],
+					"cookie": [],
+					"body": "{\"result\":{\"success\":true,\"code\":0,\"message\":\"OK\"},\"data\":\"[{\\\"nome\\\":\\\"Mario\\\",\\\"cognome\\\":\\\"Rossi\\\",\\\"dataNascita\\\":\\\"01 - 01 - 1990\\\",\\\"codiceFiscale\\\":\\\"XXXXXXXXXXXXX\\\",\\\"dataInizioIntervento\\\":\\\"01 - 01 - 1999\\\",\\\"dataFineIntervento\\\":\\\"01-01-2000\\\"},{\\\"nome\\\":\\\"Mario\\\",\\\"cognome\\\":\\\"Rossi\\\",\\\"dataNascita\\\":\\\"01 - 01 - 1990\\\",\\\"codiceFiscale\\\":\\\"XXXXXXXXXXXXX\\\",\\\"dataInizioIntervento\\\":\\\"01 - 01 - 1999\\\",\\\"dataFineIntervento\\\":\\\"01-01-2000\\\"},{\\\"nome\\\":\\\"Mario\\\",\\\"cognome\\\":\\\"Rossi\\\",\\\"dataNascita\\\":\\\"01 - 01 - 1990\\\",\\\"codiceFiscale\\\":\\\"XXXXXXXXXXXXX\\\",\\\"dataInizioIntervento\\\":\\\"01 - 01 - 1999\\\",\\\"dataFineIntervento\\\":\\\"01-01-2000\\\"},{\\\"nome\\\":\\\"Mario\\\",\\\"cognome\\\":\\\"Rossi\\\",\\\"dataNascita\\\":\\\"01 - 01 - 1990\\\",\\\"codiceFiscale\\\":\\\"XXXXXXXXXXXXX\\\",\\\"dataInizioIntervento\\\":\\\"01 - 01 - 1999\\\",\\\"dataFineIntervento\\\":\\\"01-01-2000\\\"},{\\\"nome\\\":\\\"Mario\\\",\\\"cognome\\\":\\\"Rossi\\\",\\\"dataNascita\\\":\\\"01 - 01 - 1990\\\",\\\"codiceFiscale\\\":\\\"XXXXXXXXXXXXX\\\",\\\"dataInizioIntervento\\\":\\\"01 - 01 - 1999\\\",\\\"dataFineIntervento\\\":\\\"01-01-2000\\\"},{\\\"nome\\\":\\\"Mario\\\",\\\"cognome\\\":\\\"Rossi\\\",\\\"dataNascita\\\":\\\"01 - 01 - 1990\\\",\\\"codiceFiscale\\\":\\\"XXXXXXXXXXXXX\\\",\\\"dataInizioIntervento\\\":\\\"01 - 01 - 1999\\\",\\\"dataFineIntervento\\\":\\\"01-01-2000\\\"}]\"}"
+				}
+			]
+		},
+		{
+			"name": "validaAssistito",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "x-mock-response-name",
+						"type": "text",
+						"value": "Elenco Interventi - OK",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"{{ACCESS_TOKEN}}\",\r\n    \"method\": \"validaAssistito\",\r\n    \"param\": {\r\n        \"cognome\": \"Trancoso\",\r\n        \"nome\": \"Carlos\",\r\n        \"codiceFiscale\": \"TRNCLS92S12Z131O\",\r\n        \"sesso\": {\r\n            \"id\": 1,\r\n            \"nome\": \"M\"\r\n        },\r\n        \"dataNascita\": \"1992-11-12\",\r\n        \"luogoNascita\": {\r\n            \"nazione\": {\r\n                \"id\": 108,\r\n                \"nome\": \"SPAGNA\"\r\n            },\r\n            \"provincia\": \"\",\r\n            \"comune\": \"\",\r\n            \"comuneEstero\": \"Mataro'\"\r\n        },\r\n        \"luogoResidenza\": {\r\n            \"nazione\": {\r\n                \"id\": 5,\r\n                \"nome\": \"ITALIA\"\r\n            },\r\n            \"provincia\": {\r\n                \"id\": 52,\r\n                \"nome\": \"Modena\"\r\n            },\r\n            \"comune\": {\r\n                \"id\": 6809,\r\n                \"nome\": \"MODENA\"\r\n            },\r\n            \"indirizzo\": \"Via C. Zucchi\",\r\n            \"numeroCivico\": \"21\",\r\n            \"cap\": \"41123\"\r\n        },\r\n        \"statusLavorativo\": {\r\n            \"id\": 2477,\r\n            \"nome\": \"10_Dipendente full-time tempo indeterminato\"\r\n        },\r\n        \"professioneCorrente\": {\r\n            \"id\": 169,\r\n            \"nome\": \"15_Impiegato/a\"\r\n        },\r\n        \"professionePrecedente\": {\r\n            \"id\": 169,\r\n            \"nome\": \"15_Impiegato/a\"\r\n        },\r\n        \"invalidita\": {\r\n            \"presente\": false,\r\n            \"percentuale\": 0\r\n        }\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/ServiziFruizioneDiffusa.aspx",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"ServiziFruizioneDiffusa.aspx"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Elenco Interventi - OK",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"token\": \"{{ACCESS_TOKEN}}\",\r\n\t\"method\": \"getInterventi\",\r\n    \"param\": {}\r\n}"
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/ServiziFruizioneDiffusa.aspx",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"ServiziFruizioneDiffusa.aspx"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "2.0.50727"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET,POST"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "*"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 23 Nov 2020 10:49:55 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1238"
+						}
+					],
+					"cookie": [],
+					"body": "{\"result\":{\"success\":true,\"code\":0,\"message\":\"OK\"},\"data\":\"[{\\\"nome\\\":\\\"Mario\\\",\\\"cognome\\\":\\\"Rossi\\\",\\\"dataNascita\\\":\\\"01 - 01 - 1990\\\",\\\"codiceFiscale\\\":\\\"XXXXXXXXXXXXX\\\",\\\"dataInizioIntervento\\\":\\\"01 - 01 - 1999\\\",\\\"dataFineIntervento\\\":\\\"01-01-2000\\\"},{\\\"nome\\\":\\\"Mario\\\",\\\"cognome\\\":\\\"Rossi\\\",\\\"dataNascita\\\":\\\"01 - 01 - 1990\\\",\\\"codiceFiscale\\\":\\\"XXXXXXXXXXXXX\\\",\\\"dataInizioIntervento\\\":\\\"01 - 01 - 1999\\\",\\\"dataFineIntervento\\\":\\\"01-01-2000\\\"},{\\\"nome\\\":\\\"Mario\\\",\\\"cognome\\\":\\\"Rossi\\\",\\\"dataNascita\\\":\\\"01 - 01 - 1990\\\",\\\"codiceFiscale\\\":\\\"XXXXXXXXXXXXX\\\",\\\"dataInizioIntervento\\\":\\\"01 - 01 - 1999\\\",\\\"dataFineIntervento\\\":\\\"01-01-2000\\\"},{\\\"nome\\\":\\\"Mario\\\",\\\"cognome\\\":\\\"Rossi\\\",\\\"dataNascita\\\":\\\"01 - 01 - 1990\\\",\\\"codiceFiscale\\\":\\\"XXXXXXXXXXXXX\\\",\\\"dataInizioIntervento\\\":\\\"01 - 01 - 1999\\\",\\\"dataFineIntervento\\\":\\\"01-01-2000\\\"},{\\\"nome\\\":\\\"Mario\\\",\\\"cognome\\\":\\\"Rossi\\\",\\\"dataNascita\\\":\\\"01 - 01 - 1990\\\",\\\"codiceFiscale\\\":\\\"XXXXXXXXXXXXX\\\",\\\"dataInizioIntervento\\\":\\\"01 - 01 - 1999\\\",\\\"dataFineIntervento\\\":\\\"01-01-2000\\\"},{\\\"nome\\\":\\\"Mario\\\",\\\"cognome\\\":\\\"Rossi\\\",\\\"dataNascita\\\":\\\"01 - 01 - 1990\\\",\\\"codiceFiscale\\\":\\\"XXXXXXXXXXXXX\\\",\\\"dataInizioIntervento\\\":\\\"01 - 01 - 1999\\\",\\\"dataFineIntervento\\\":\\\"01-01-2000\\\"}]\"}"
+				}
+			]
+		},
+		{
+			"name": "aggiungiAssistito",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "x-mock-response-name",
+						"type": "text",
+						"value": "Elenco Interventi - OK",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"{{ACCESS_TOKEN}}\",\r\n    \"method\": \"aggiungiAssistito\",\r\n    \"param\": {\r\n        \"cognome\": \"Trancoso\",\r\n        \"nome\": \"Carlos\",\r\n        \"codiceFiscale\": \"TRNCLS92S12Z131O\",\r\n        \"sesso\": {\r\n            \"id\": 1,\r\n            \"nome\": \"M\"\r\n        },\r\n        \"dataNascita\": \"1992-11-12\",\r\n        \"luogoNascita\": {\r\n            \"nazione\": {\r\n                \"id\": 108,\r\n                \"nome\": \"SPAGNA\"\r\n            },\r\n            \"provincia\": \"\",\r\n            \"comune\": \"\",\r\n            \"comuneEstero\": \"Mataro'\"\r\n        },\r\n        \"luogoResidenza\": {\r\n            \"nazione\": {\r\n                \"id\": 5,\r\n                \"nome\": \"ITALIA\"\r\n            },\r\n            \"provincia\": {\r\n                \"id\": 52,\r\n                \"nome\": \"Modena\"\r\n            },\r\n            \"comune\": {\r\n                \"id\": 6809,\r\n                \"nome\": \"MODENA\"\r\n            },\r\n            \"indirizzo\": \"Via C. Zucchi\",\r\n            \"numeroCivico\": \"21\",\r\n            \"cap\": \"41123\"\r\n        },\r\n        \"statusLavorativo\": {\r\n            \"id\": 2477,\r\n            \"nome\": \"10_Dipendente full-time tempo indeterminato\"\r\n        },\r\n        \"professioneCorrente\": {\r\n            \"id\": 169,\r\n            \"nome\": \"15_Impiegato/a\"\r\n        },\r\n        \"professionePrecedente\": {\r\n            \"id\": 169,\r\n            \"nome\": \"15_Impiegato/a\"\r\n        },\r\n        \"invalidita\": {\r\n            \"presente\": false,\r\n            \"percentuale\": 0\r\n        }\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/ServiziFruizioneDiffusa.aspx",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"ServiziFruizioneDiffusa.aspx"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Elenco Interventi - OK",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"token\": \"{{ACCESS_TOKEN}}\",\r\n\t\"method\": \"getInterventi\",\r\n    \"param\": {}\r\n}"
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/ServiziFruizioneDiffusa.aspx",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"ServiziFruizioneDiffusa.aspx"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "2.0.50727"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET,POST"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "*"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 23 Nov 2020 10:49:55 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1238"
+						}
+					],
+					"cookie": [],
+					"body": "{\"result\":{\"success\":true,\"code\":0,\"message\":\"OK\"},\"data\":\"[{\\\"nome\\\":\\\"Mario\\\",\\\"cognome\\\":\\\"Rossi\\\",\\\"dataNascita\\\":\\\"01 - 01 - 1990\\\",\\\"codiceFiscale\\\":\\\"XXXXXXXXXXXXX\\\",\\\"dataInizioIntervento\\\":\\\"01 - 01 - 1999\\\",\\\"dataFineIntervento\\\":\\\"01-01-2000\\\"},{\\\"nome\\\":\\\"Mario\\\",\\\"cognome\\\":\\\"Rossi\\\",\\\"dataNascita\\\":\\\"01 - 01 - 1990\\\",\\\"codiceFiscale\\\":\\\"XXXXXXXXXXXXX\\\",\\\"dataInizioIntervento\\\":\\\"01 - 01 - 1999\\\",\\\"dataFineIntervento\\\":\\\"01-01-2000\\\"},{\\\"nome\\\":\\\"Mario\\\",\\\"cognome\\\":\\\"Rossi\\\",\\\"dataNascita\\\":\\\"01 - 01 - 1990\\\",\\\"codiceFiscale\\\":\\\"XXXXXXXXXXXXX\\\",\\\"dataInizioIntervento\\\":\\\"01 - 01 - 1999\\\",\\\"dataFineIntervento\\\":\\\"01-01-2000\\\"},{\\\"nome\\\":\\\"Mario\\\",\\\"cognome\\\":\\\"Rossi\\\",\\\"dataNascita\\\":\\\"01 - 01 - 1990\\\",\\\"codiceFiscale\\\":\\\"XXXXXXXXXXXXX\\\",\\\"dataInizioIntervento\\\":\\\"01 - 01 - 1999\\\",\\\"dataFineIntervento\\\":\\\"01-01-2000\\\"},{\\\"nome\\\":\\\"Mario\\\",\\\"cognome\\\":\\\"Rossi\\\",\\\"dataNascita\\\":\\\"01 - 01 - 1990\\\",\\\"codiceFiscale\\\":\\\"XXXXXXXXXXXXX\\\",\\\"dataInizioIntervento\\\":\\\"01 - 01 - 1999\\\",\\\"dataFineIntervento\\\":\\\"01-01-2000\\\"},{\\\"nome\\\":\\\"Mario\\\",\\\"cognome\\\":\\\"Rossi\\\",\\\"dataNascita\\\":\\\"01 - 01 - 1990\\\",\\\"codiceFiscale\\\":\\\"XXXXXXXXXXXXX\\\",\\\"dataInizioIntervento\\\":\\\"01 - 01 - 1999\\\",\\\"dataFineIntervento\\\":\\\"01-01-2000\\\"}]\"}"
+				}
+			]
+		},
+		{
+			"name": "getInterventi",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "x-mock-response-name",
+						"value": "Elenco Interventi - OK",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"token\": \"{{ACCESS_TOKEN}}\",\r\n\t\"method\": \"getInterventi\",\r\n    \"param\": {\r\n        \"idStruttura\": 388,\r\n        \"filtro\": {\r\n            \"cognome\": \"\",\r\n            \"nome\": \"\",\r\n            \"codiceFiscale\": \"\",\r\n            \"dataIntervento\": {\r\n                \"inizio\": \"\",\r\n                \"fine\": \"\"\r\n            }\r\n        },\r\n        \"ordinamento\": {\r\n            \"field\": \"nome\",\r\n            \"asc\": false\r\n        },\r\n        \"paginazione\": {\r\n            \"page\": 1,\r\n            \"limit\": 20\r\n        }\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/ServiziFruizioneDiffusa.aspx",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"ServiziFruizioneDiffusa.aspx"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getInterventi",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "x-mock-response-name",
+								"value": "Elenco Interventi - OK",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"token\": \"{{ACCESS_TOKEN}}\",\r\n\t\"method\": \"getInterventi\",\r\n    \"param\": {\r\n        \"idStruttura\": 388,\r\n        \"filtro\": {\r\n            \"cognome\": \"\",\r\n            \"nome\": \"\",\r\n            \"codiceFiscale\": \"\",\r\n            \"dataIntervento\": {\r\n                \"inizio\": \"\",\r\n                \"fine\": \"\"\r\n            }\r\n        },\r\n        \"ordinamento\": {\r\n            \"field\": \"nome\",\r\n            \"asc\": false\r\n        },\r\n        \"paginazione\": {\r\n            \"page\": 1,\r\n            \"limit\": 20\r\n        }\r\n    }\r\n}"
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/ServiziFruizioneDiffusa.aspx",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"ServiziFruizioneDiffusa.aspx"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET,POST,OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 20 Dec 2020 16:46:19 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2791"
+						}
+					],
+					"cookie": [],
+					"body": "{\"result\":{\"success\":true,\"code\":0,\"message\":null},\"data\":\"{\\\"page\\\":1,\\\"count\\\":6,\\\"items\\\":[{\\\"id\\\":57417,\\\"nome\\\":\\\"CARLOS\\\",\\\"cognome\\\":\\\"TRANCOSO\\\",\\\"dataNascita\\\":\\\"12-11-1992\\\",\\\"codiceFiscale\\\":\\\"TRNCLS92S12Z131O\\\",\\\"dataInizioIntervento\\\":\\\"18-12-2020\\\",\\\"dataFineIntervento\\\":\\\"31-12-2020\\\",\\\"area\\\":{\\\"id\\\":2,\\\"nome\\\":\\\"01 - Minori e famiglia\\\",\\\"ambiti\\\":null},\\\"ambito\\\":{\\\"id\\\":204,\\\"nome\\\":\\\"01 - Welfare d'accesso\\\",\\\"servizi\\\":null},\\\"servizio\\\":{\\\"id\\\":24,\\\"nome\\\":\\\"Servizio di Pronto Intervento Sociale (PIS) ex Art.85\\\"}},{\\\"id\\\":57421,\\\"nome\\\":\\\"CARLOS\\\",\\\"cognome\\\":\\\"TRANCOSO\\\",\\\"dataNascita\\\":\\\"12-11-1992\\\",\\\"codiceFiscale\\\":\\\"TRNCLS92S12Z131O\\\",\\\"dataInizioIntervento\\\":\\\"18-12-2020\\\",\\\"dataFineIntervento\\\":\\\"31-12-2020\\\",\\\"area\\\":{\\\"id\\\":2,\\\"nome\\\":\\\"01 - Minori e famiglia\\\",\\\"ambiti\\\":null},\\\"ambito\\\":{\\\"id\\\":204,\\\"nome\\\":\\\"01 - Welfare d'accesso\\\",\\\"servizi\\\":null},\\\"servizio\\\":{\\\"id\\\":24,\\\"nome\\\":\\\"Servizio di Pronto Intervento Sociale (PIS) ex Art.85\\\"}},{\\\"id\\\":57428,\\\"nome\\\":\\\"CARLOS\\\",\\\"cognome\\\":\\\"TRANCOSO\\\",\\\"dataNascita\\\":\\\"12-11-1992\\\",\\\"codiceFiscale\\\":\\\"TRNCLS92S12Z131O\\\",\\\"dataInizioIntervento\\\":\\\"18-12-2020\\\",\\\"dataFineIntervento\\\":\\\"18-12-2020\\\",\\\"area\\\":{\\\"id\\\":2,\\\"nome\\\":\\\"01 - Minori e famiglia\\\",\\\"ambiti\\\":null},\\\"ambito\\\":{\\\"id\\\":204,\\\"nome\\\":\\\"01 - Welfare d'accesso\\\",\\\"servizi\\\":null},\\\"servizio\\\":{\\\"id\\\":24,\\\"nome\\\":\\\"Servizio di Pronto Intervento Sociale (PIS) ex Art.85\\\"}},{\\\"id\\\":57419,\\\"nome\\\":\\\"CARLOS\\\",\\\"cognome\\\":\\\"TRANCOSO\\\",\\\"dataNascita\\\":\\\"12-11-1992\\\",\\\"codiceFiscale\\\":\\\"TRNCLS92S12Z131O\\\",\\\"dataInizioIntervento\\\":\\\"18-12-2020\\\",\\\"dataFineIntervento\\\":\\\"31-12-2020\\\",\\\"area\\\":{\\\"id\\\":2,\\\"nome\\\":\\\"01 - Minori e famiglia\\\",\\\"ambiti\\\":null},\\\"ambito\\\":{\\\"id\\\":204,\\\"nome\\\":\\\"01 - Welfare d'accesso\\\",\\\"servizi\\\":null},\\\"servizio\\\":{\\\"id\\\":24,\\\"nome\\\":\\\"Servizio di Pronto Intervento Sociale (PIS) ex Art.85\\\"}},{\\\"id\\\":57424,\\\"nome\\\":\\\"CARLOS\\\",\\\"cognome\\\":\\\"TRANCOSO\\\",\\\"dataNascita\\\":\\\"12-11-1992\\\",\\\"codiceFiscale\\\":\\\"TRNCLS92S12Z131O\\\",\\\"dataInizioIntervento\\\":\\\"18-12-2020\\\",\\\"dataFineIntervento\\\":\\\"31-12-2020\\\",\\\"area\\\":{\\\"id\\\":2,\\\"nome\\\":\\\"01 - Minori e famiglia\\\",\\\"ambiti\\\":null},\\\"ambito\\\":{\\\"id\\\":204,\\\"nome\\\":\\\"01 - Welfare d'accesso\\\",\\\"servizi\\\":null},\\\"servizio\\\":{\\\"id\\\":24,\\\"nome\\\":\\\"Servizio di Pronto Intervento Sociale (PIS) ex Art.85\\\"}},{\\\"id\\\":57418,\\\"nome\\\":\\\"CARLOS\\\",\\\"cognome\\\":\\\"TRANCOSO\\\",\\\"dataNascita\\\":\\\"12-11-1992\\\",\\\"codiceFiscale\\\":\\\"TRNCLS92S12Z131O\\\",\\\"dataInizioIntervento\\\":\\\"18-12-2020\\\",\\\"dataFineIntervento\\\":\\\"31-12-2020\\\",\\\"area\\\":{\\\"id\\\":2,\\\"nome\\\":\\\"01 - Minori e famiglia\\\",\\\"ambiti\\\":null},\\\"ambito\\\":{\\\"id\\\":204,\\\"nome\\\":\\\"01 - Welfare d'accesso\\\",\\\"servizi\\\":null},\\\"servizio\\\":{\\\"id\\\":24,\\\"nome\\\":\\\"Servizio di Pronto Intervento Sociale (PIS) ex Art.85\\\"}}]}\"}"
+				}
+			]
+		},
+		{
+			"name": "getIntervento",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "x-mock-response-name",
+						"type": "text",
+						"value": "Elenco Interventi - OK",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"token\": \"{{ACCESS_TOKEN}}\",\r\n\t\"method\": \"getIntervento\",\r\n    \"param\": {\r\n        \"idStruttura\": 388,\r\n        \"id\": 57417\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/ServiziFruizioneDiffusa.aspx",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"ServiziFruizioneDiffusa.aspx"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getIntervento",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "x-mock-response-name",
+								"type": "text",
+								"value": "Elenco Interventi - OK",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"token\": \"{{ACCESS_TOKEN}}\",\r\n\t\"method\": \"getIntervento\",\r\n    \"param\": {\r\n        \"idStruttura\": 388,\r\n        \"id\": 57417\r\n    }\r\n}"
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/ServiziFruizioneDiffusa.aspx",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"ServiziFruizioneDiffusa.aspx"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET,POST,OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 20 Dec 2020 16:48:31 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "892"
+						}
+					],
+					"cookie": [],
+					"body": "{\"result\":{\"success\":true,\"code\":0,\"message\":null},\"data\":\"{\\\"intervento\\\":{\\\"id\\\":57417,\\\"titolo\\\":\\\"Test\\\",\\\"note\\\":\\\"Note test\\\",\\\"dataInizioIntervento\\\":\\\"2020-12-18\\\",\\\"dataFineIntervento\\\":\\\"2020-12-31\\\",\\\"area\\\":{\\\"id\\\":2,\\\"nome\\\":\\\"01 - Minori e famiglia\\\",\\\"ambiti\\\":[]},\\\"ambito\\\":{\\\"id\\\":204,\\\"nome\\\":\\\"01 - Welfare d'accesso\\\",\\\"servizi\\\":[]},\\\"servizio\\\":{\\\"id\\\":24,\\\"nome\\\":\\\"Servizio di Pronto Intervento Sociale (PIS) ex Art.85\\\"},\\\"numeroComponenti\\\":2,\\\"attivitaLavorativa\\\":{\\\"id\\\":171,\\\"nome\\\":\\\"01_Sconosciuta\\\"},\\\"attivitaLavorativaPrecedente\\\":{\\\"id\\\":171,\\\"nome\\\":\\\"01_Sconosciuta\\\"},\\\"presenzaAnziani\\\":false,\\\"presenzaDisabili\\\":false,\\\"invalidita\\\":{\\\"presente\\\":false,\\\"percentuale\\\":0}},\\\"assistito\\\":{\\\"id\\\":163422,\\\"cognome\\\":\\\"TRANCOSO\\\",\\\"nome\\\":\\\"CARLOS\\\",\\\"dataNascita\\\":\\\"1992-11-12\\\",\\\"codiceFiscale\\\":\\\"TRNCLS92S12Z131O\\\",\\\"fonteDati\\\":\\\"gestionale\\\"}}\"}"
+				}
+			]
+		},
+		{
+			"name": "aggiungiIntervento",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "x-mock-response-name",
+						"type": "text",
+						"value": "Elenco Interventi - OK",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"{{ACCESS_TOKEN}}\",\r\n    \"method\": \"aggiungiIntervento\",\r\n    \"param\": {\r\n        \"idStruttura\": 388,\r\n        \"assistito\": {\r\n            \"id\": 163422,\r\n            \"cognome\": \"TRANCOSO\",\r\n            \"nome\": \"CARLOS\",\r\n            \"dataNascita\": \"12-11-1992\",\r\n            \"codiceFiscale\": \"TRNCLS92S12Z131O\",\r\n            \"fonteDati\": \"gestionale\"\r\n        },\r\n        \"interventi\": [\r\n            {\r\n                \"area\": {\r\n                    \"id\": 2,\r\n                    \"nome\": \"01 - Minori e famiglia\"\r\n                },\r\n                \"ambito\": {\r\n                    \"id\": 204,\r\n                    \"nome\": \"01 - Welfare d'accesso\"\r\n                },\r\n                \"servizio\": {\r\n                    \"id\": 24,\r\n                    \"nome\": \"Servizio di Pronto Intervento Sociale (PIS) ex Art.85\"\r\n                },\r\n                \"dataInizioIntervento\": \"2020-12-18\",\r\n                \"dataFineIntervento\": \"2020-12-31\",\r\n                \"titolo\": \"Test\",\r\n                \"attivitaLavorativa\": {\r\n                    \"id\": 171,\r\n                    \"nome\": \"01_Sconosciuta\"\r\n                },\r\n                \"presenzaAnziani\": false,\r\n                \"presenzaDisabili\": false,\r\n                \"attivitaLavorativaPrecedente\": {\r\n                    \"id\": 171,\r\n                    \"nome\": \"01_Sconosciuta\"\r\n                },\r\n                \"numeroComponenti\": 2,\r\n                \"invalidita\": {\r\n                    \"presente\": false,\r\n                    \"percentuale\": 0\r\n                },\r\n                \"note\": \"Note test\"\r\n            }\r\n        ]\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/ServiziFruizioneDiffusa.aspx",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"ServiziFruizioneDiffusa.aspx"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Elenco Interventi - OK",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"token\": \"{{ACCESS_TOKEN}}\",\r\n\t\"method\": \"getInterventi\",\r\n    \"param\": {}\r\n}"
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/ServiziFruizioneDiffusa.aspx",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"ServiziFruizioneDiffusa.aspx"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "2.0.50727"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET,POST"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "*"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 23 Nov 2020 10:49:55 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1238"
+						}
+					],
+					"cookie": [],
+					"body": "{\"result\":{\"success\":true,\"code\":0,\"message\":\"OK\"},\"data\":\"[{\\\"nome\\\":\\\"Mario\\\",\\\"cognome\\\":\\\"Rossi\\\",\\\"dataNascita\\\":\\\"01 - 01 - 1990\\\",\\\"codiceFiscale\\\":\\\"XXXXXXXXXXXXX\\\",\\\"dataInizioIntervento\\\":\\\"01 - 01 - 1999\\\",\\\"dataFineIntervento\\\":\\\"01-01-2000\\\"},{\\\"nome\\\":\\\"Mario\\\",\\\"cognome\\\":\\\"Rossi\\\",\\\"dataNascita\\\":\\\"01 - 01 - 1990\\\",\\\"codiceFiscale\\\":\\\"XXXXXXXXXXXXX\\\",\\\"dataInizioIntervento\\\":\\\"01 - 01 - 1999\\\",\\\"dataFineIntervento\\\":\\\"01-01-2000\\\"},{\\\"nome\\\":\\\"Mario\\\",\\\"cognome\\\":\\\"Rossi\\\",\\\"dataNascita\\\":\\\"01 - 01 - 1990\\\",\\\"codiceFiscale\\\":\\\"XXXXXXXXXXXXX\\\",\\\"dataInizioIntervento\\\":\\\"01 - 01 - 1999\\\",\\\"dataFineIntervento\\\":\\\"01-01-2000\\\"},{\\\"nome\\\":\\\"Mario\\\",\\\"cognome\\\":\\\"Rossi\\\",\\\"dataNascita\\\":\\\"01 - 01 - 1990\\\",\\\"codiceFiscale\\\":\\\"XXXXXXXXXXXXX\\\",\\\"dataInizioIntervento\\\":\\\"01 - 01 - 1999\\\",\\\"dataFineIntervento\\\":\\\"01-01-2000\\\"},{\\\"nome\\\":\\\"Mario\\\",\\\"cognome\\\":\\\"Rossi\\\",\\\"dataNascita\\\":\\\"01 - 01 - 1990\\\",\\\"codiceFiscale\\\":\\\"XXXXXXXXXXXXX\\\",\\\"dataInizioIntervento\\\":\\\"01 - 01 - 1999\\\",\\\"dataFineIntervento\\\":\\\"01-01-2000\\\"},{\\\"nome\\\":\\\"Mario\\\",\\\"cognome\\\":\\\"Rossi\\\",\\\"dataNascita\\\":\\\"01 - 01 - 1990\\\",\\\"codiceFiscale\\\":\\\"XXXXXXXXXXXXX\\\",\\\"dataInizioIntervento\\\":\\\"01 - 01 - 1999\\\",\\\"dataFineIntervento\\\":\\\"01-01-2000\\\"}]\"}"
+				}
+			]
+		},
+		{
+			"name": "modificaIntervento",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "x-mock-response-name",
+						"type": "text",
+						"value": "Elenco Interventi - OK",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"{{ACCESS_TOKEN}}\",\r\n    \"method\": \"modificaIntervento\",\r\n    \"param\": {\r\n        \"idStruttura\": 388,\r\n        \"intervento\": {\r\n            \"id\": 57417,\r\n            \"dataInizioIntervento\": \"2020-12-18\",\r\n            \"dataFineIntervento\": \"2020-12-31\",\r\n            \"area\": {\r\n                \"id\": 2,\r\n                \"nome\": \"01- Minori e famiglia\",\r\n                \"ambiti\": []\r\n            },\r\n            \"ambito\": {\r\n                \"id\": 204,\r\n                \"nome\": \"01 - Welfare d'accesso\",\r\n                \"servizi\": []\r\n            },\r\n            \"servizio\": {\r\n                \"id\": 24,\r\n                \"nome\": \"Servizio di Pronto Intervento Sociale (PIS) ex Art.85\"\r\n            },\r\n            \"titolo\": \"Test\",\r\n            \"note\": \"Note test\",\r\n            \"numeroComponenti\": 2,\r\n            \"attivitaLavorativa\": {\r\n                \"id\": 171,\r\n                \"nome\": \"01_Sconosciuta\"\r\n            },\r\n            \"attivitaLavorativaPrecedente\": {\r\n                \"id\": 171,\r\n                \"nome\": \"01_Sconosciuta\"\r\n            },\r\n            \"invalidita\": {\r\n                \"presente\": false,\r\n                \"percentuale\": 0\r\n            },\r\n            \"presenzaAnziani\": false,\r\n            \"presenzaDisabili\": false,\r\n            \"assistito\": null\r\n        },\r\n        \"assistito\": {\r\n            \"id\": 163422,\r\n            \"cognome\": \"TRANCOSO\",\r\n            \"nome\": \"CARLOS\",\r\n            \"dataNascita\": \"1992-11-12\",\r\n            \"codiceFiscale\": \"TRNCLS92S12Z131O\",\r\n            \"fonteDati\": \"gestionale\"\r\n        }\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/ServiziFruizioneDiffusa.aspx",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"ServiziFruizioneDiffusa.aspx"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Elenco Interventi - OK",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"token\": \"{{ACCESS_TOKEN}}\",\r\n\t\"method\": \"getInterventi\",\r\n    \"param\": {}\r\n}"
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/ServiziFruizioneDiffusa.aspx",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"ServiziFruizioneDiffusa.aspx"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "2.0.50727"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET,POST"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "*"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 23 Nov 2020 10:49:55 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1238"
+						}
+					],
+					"cookie": [],
+					"body": "{\"result\":{\"success\":true,\"code\":0,\"message\":\"OK\"},\"data\":\"[{\\\"nome\\\":\\\"Mario\\\",\\\"cognome\\\":\\\"Rossi\\\",\\\"dataNascita\\\":\\\"01 - 01 - 1990\\\",\\\"codiceFiscale\\\":\\\"XXXXXXXXXXXXX\\\",\\\"dataInizioIntervento\\\":\\\"01 - 01 - 1999\\\",\\\"dataFineIntervento\\\":\\\"01-01-2000\\\"},{\\\"nome\\\":\\\"Mario\\\",\\\"cognome\\\":\\\"Rossi\\\",\\\"dataNascita\\\":\\\"01 - 01 - 1990\\\",\\\"codiceFiscale\\\":\\\"XXXXXXXXXXXXX\\\",\\\"dataInizioIntervento\\\":\\\"01 - 01 - 1999\\\",\\\"dataFineIntervento\\\":\\\"01-01-2000\\\"},{\\\"nome\\\":\\\"Mario\\\",\\\"cognome\\\":\\\"Rossi\\\",\\\"dataNascita\\\":\\\"01 - 01 - 1990\\\",\\\"codiceFiscale\\\":\\\"XXXXXXXXXXXXX\\\",\\\"dataInizioIntervento\\\":\\\"01 - 01 - 1999\\\",\\\"dataFineIntervento\\\":\\\"01-01-2000\\\"},{\\\"nome\\\":\\\"Mario\\\",\\\"cognome\\\":\\\"Rossi\\\",\\\"dataNascita\\\":\\\"01 - 01 - 1990\\\",\\\"codiceFiscale\\\":\\\"XXXXXXXXXXXXX\\\",\\\"dataInizioIntervento\\\":\\\"01 - 01 - 1999\\\",\\\"dataFineIntervento\\\":\\\"01-01-2000\\\"},{\\\"nome\\\":\\\"Mario\\\",\\\"cognome\\\":\\\"Rossi\\\",\\\"dataNascita\\\":\\\"01 - 01 - 1990\\\",\\\"codiceFiscale\\\":\\\"XXXXXXXXXXXXX\\\",\\\"dataInizioIntervento\\\":\\\"01 - 01 - 1999\\\",\\\"dataFineIntervento\\\":\\\"01-01-2000\\\"},{\\\"nome\\\":\\\"Mario\\\",\\\"cognome\\\":\\\"Rossi\\\",\\\"dataNascita\\\":\\\"01 - 01 - 1990\\\",\\\"codiceFiscale\\\":\\\"XXXXXXXXXXXXX\\\",\\\"dataInizioIntervento\\\":\\\"01 - 01 - 1999\\\",\\\"dataFineIntervento\\\":\\\"01-01-2000\\\"}]\"}"
+				}
+			]
+		}
+	]
+}

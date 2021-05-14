@@ -1,0 +1,339 @@
+/*********************************************************************/
+/************** Progetti di Impresa Srl copyright 2006 ***************/
+/*********************************************************************/
+
+/*********************************************************************/
+/**** RESET DEI VALORI DI DEFAULKT DEI BROWSER ***********************/
+/*********************************************************************/
+
+html
+{
+    color: #000;
+    background: #FFF;
+    word-wrap: break-word;
+    /*word-break: break-all;*/
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote
+{
+    margin: 0;
+    padding: 0;
+}
+
+tt, code, kbd, samp {
+    font-family: monospace;
+}
+
+i, cite, em, var, address, dfn {
+    font-style: italic;
+}
+
+.bigStyle
+{
+    font-size: 110%;
+}
+
+.marker
+{
+    background-color: Yellow;
+}
+
+fieldset, img
+{
+    border: 0;
+}
+/*
+h1, h2, h3, h4, h5, h6, table, tr, td, th, p
+{
+    font-size: 100%;
+    font-weight: normal;
+}*/
+
+abbr, acronym
+{
+    border: 0;
+    font-variant: normal;
+}
+
+sup
+{
+    vertical-align: baseline;
+}
+
+sub
+{
+    vertical-align: baseline;
+}
+
+/*because legend doesn't inherit in IE */
+legend
+{
+    color: #000;
+}
+
+input, button, textarea, select, optgroup, option
+{
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+}
+
+/*@purpose To enable resizing for IE */
+/*@branch For IE6-Win, IE7-Win */
+input, button, textarea, select
+{
+    font-size: 100%;
+}
+
+img
+{
+    -ms-interpolation-mode: bicubic;
+}
+
+
+
+
+/*********************************************************************/
+/**** STRUTTURA MAGIC DESIGNER ***************************************/
+/*********************************************************************/
+
+#formid_intestazione1
+{
+
+}
+
+#formid_intestazione1 .intestazione
+{
+
+}
+
+#formid_intestazione2
+{
+
+}
+
+#formid_intestazione3
+{
+
+}
+
+#corpo
+{
+
+}
+
+#formid_sx
+{
+
+}
+
+#formid_dx
+{
+
+}
+
+#formid_centro
+{
+
+}
+
+#formid_fondo1
+{
+
+}
+
+#formid_fondo2
+{
+
+}
+
+#formid_fondo3
+{
+
+}
+
+#formid_allineaFondo
+{
+    clear: both;
+}
+/*needed to make room for footer*/
+
+/*classe che nasconde tutto ciò che serve per l'altocontrasto*/
+/*che però non si deve vedere nel portale*/
+.fortecontrasto
+{
+    display: none;
+}
+
+* > html #formid_allineaFondo
+{
+    float: left;
+    width: 100%;
+}
+
+
+
+
+.portlet.light {
+        padding: 12px 20px 15px;
+        background-color: #fff;
+    }
+
+        .portlet.light.bordered {
+            border: 1px solid #e7ecf1 !important;
+        }
+
+            .portlet.light.bordered > .portlet-title {
+                border-bottom: 1px solid #eef1f5;
+            }
+
+        .portlet.light.bg-inverse {
+            background: #f1f4f7;
+        }
+
+        .portlet.light > .portlet-title {
+            padding: 0;
+            min-height: 48px;
+        }
+
+            .portlet.light > .portlet-title > .caption {
+                color: #666;
+                padding: 10px 0;
+            }
+
+                .portlet.light > .portlet-title > .caption > .caption-subject {
+                    font-size: 16px;
+                }
+
+                .portlet.light > .portlet-title > .caption > i {
+                    color: #777;
+                    font-size: 15px;
+                    font-weight: 300;
+                    margin-top: 3px;
+                }
+
+    .portlet.solid.blue-chambray > .portlet-title > .caption, .portlet.solid.blue-dark > .portlet-title > .caption, .portlet.solid.blue-ebonyclay > .portlet-title > .caption, .portlet.solid.blue-hoki > .portlet-title > .caption, .portlet.solid.blue-madison > .portlet-title > .caption, .portlet.solid.blue-oleo > .portlet-title > .caption, .portlet.solid.blue-sharp > .portlet-title > .caption, .portlet.solid.blue-soft > .portlet-title > .caption, .portlet.solid.blue-steel > .portlet-title > .caption, .portlet.solid.blue > .portlet-title > .caption, .portlet.solid.dark > .portlet-title > .caption, .portlet.solid.default > .portlet-title > .caption, .portlet.solid.green-dark > .portlet-title > .caption, .portlet.solid.green-haze > .portlet-title > .caption, .portlet.solid.green-jungle > .portlet-title > .caption, .portlet.solid.green-meadow > .portlet-title > .caption, .portlet.solid.green-seagreen > .portlet-title > .caption, .portlet.solid.green-sharp > .portlet-title > .caption, .portlet.solid.green-soft > .portlet-title > .caption, .portlet.solid.green-steel > .portlet-title > .caption, .portlet.solid.green-turquoise > .portlet-title > .caption, .portlet.solid.green > .portlet-title > .caption, .portlet.solid.grey-cararra > .portlet-title > .caption, .portlet.solid.grey-cascade > .portlet-title > .caption, .portlet.solid.grey-gallery > .portlet-title > .caption, .portlet.solid.grey-mint > .portlet-title > .caption, .portlet.solid.grey-salt > .portlet-title > .caption, .portlet.solid.grey-silver > .portlet-title > .caption, .portlet.solid.grey-steel > .portlet-title > .caption, .portlet.solid.grey > .portlet-title > .caption, .portlet.solid.purple-intense > .portlet-title > .caption, .portlet.solid.purple-medium > .portlet-title > .caption, .portlet.solid.purple-plum > .portlet-title > .caption, .portlet.solid.purple-seance > .portlet-title > .caption, .portlet.solid.purple-sharp > .portlet-title > .caption, .portlet.solid.purple-soft > .portlet-title > .caption, .portlet.solid.purple-studio > .portlet-title > .caption, .portlet.solid.purple-wisteria > .portlet-title > .caption, .portlet.solid.purple > .portlet-title > .caption, .portlet.solid.red-flamingo > .portlet-title > .caption, .portlet.solid.red-haze > .portlet-title > .caption, .portlet.solid.red-intense > .portlet-title > .caption, .portlet.solid.red-mint > .portlet-title > .caption, .portlet.solid.red-pink > .portlet-title > .caption, .portlet.solid.red-soft > .portlet-title > .caption, .portlet.solid.red-sunglo > .portlet-title > .caption, .portlet.solid.red-thunderbird > .portlet-title > .caption, .portlet.solid.red > .portlet-title > .caption, .portlet.solid.white > .portlet-title > .caption, .portlet.solid.yellow-casablanca > .portlet-title > .caption, .portlet.solid.yellow-crusta > .portlet-title > .caption, .portlet.solid.yellow-gold > .portlet-title > .caption, .portlet.solid.yellow-haze > .portlet-title > .caption, .portlet.solid.yellow-lemon > .portlet-title > .caption, .portlet.solid.yellow-mint > .portlet-title > .caption, .portlet.solid.yellow-saffron > .portlet-title > .caption, .portlet.solid.yellow-soft > .portlet-title > .caption, .portlet.solid.yellow > .portlet-title > .caption {
+        font-weight: 400;
+    }
+
+    .portlet.light > .portlet-title > .caption.caption-md > .caption-subject {
+        font-size: 15px;
+    }
+
+    .portlet.light > .portlet-title > .caption.caption-md > i {
+        font-size: 14px;
+    }
+
+    .portlet.light > .portlet-title > .actions {
+        padding: 6px 0 14px;
+    }
+
+        .portlet.light > .portlet-title > .actions .btn-default {
+            color: #666;
+        }
+
+        .portlet.light > .portlet-title > .actions .btn-icon-only {
+            height: 27px;
+            width: 27px;
+        }
+
+        .portlet.light > .portlet-title > .actions .dropdown-menu li > a {
+            color: #555;
+        }
+
+    .portlet.light > .portlet-title > .inputs {
+        float: right;
+        display: inline-block;
+        padding: 4px 0;
+    }
+
+        .portlet.light > .portlet-title > .inputs > .portlet-input .input-icon > i {
+            font-size: 14px;
+            margin-top: 9px;
+        }
+
+        .portlet.light > .portlet-title > .inputs > .portlet-input .input-icon > .form-control {
+            height: 30px;
+            padding: 2px 26px 3px 10px;
+            font-size: 13px;
+        }
+
+        .portlet.light > .portlet-title > .inputs > .portlet-input > .form-control {
+            height: 30px;
+            padding: 3px 10px;
+            font-size: 13px;
+        }
+
+    .portlet.light > .portlet-title > .pagination {
+        padding: 2px 0 13px;
+    }
+
+    .portlet.light > .portlet-title > .tools {
+        padding: 10px 0 13px;
+        margin-top: 2px;
+    }
+
+    .portlet.light > .portlet-title > .nav-tabs > li {
+        margin: 0;
+        padding: 0;
+    }
+
+        .portlet.light > .portlet-title > .nav-tabs > li > a {
+            margin: 0;
+            padding: 12px 13px 13px;
+            font-size: 13px;
+            color: #666;
+        }
+
+        .portlet.light > .portlet-title > .nav-tabs > li.active > a, .portlet.light > .portlet-title > .nav-tabs > li:hover > a {
+            margin: 0;
+            background: 0 0;
+            color: #333;
+        }
+
+    .portlet.light.form-fit {
+        padding: 0;
+    }
+
+        .portlet.light.form-fit > .portlet-title {
+            padding: 17px 20px 10px;
+            margin-bottom: 0;
+        }
+
+    .portlet.light .portlet-body {
+        padding-top: 8px;
+    }
+
+    .portlet.light.portlet-fullscreen > .portlet-body {
+        padding: 8px 0;
+    }
+
+    .portlet.light.portlet-fit {
+        padding: 0;
+    }
+
+        .portlet.light.portlet-fit > .portlet-title {
+            padding: 15px 20px 10px;
+        }
+
+        .portlet.light.portlet-fit > .portlet-body {
+            padding: 10px 20px 20px;
+        }
+
+        .portlet.light.portlet-fit.portlet-form > .portlet-body {
+            padding: 0;
+        }
+
+            .portlet.light.portlet-fit.portlet-form > .portlet-body .form-actions {
+                background: 0 0;
+            }
+
+    .portlet.box.white > .portlet-title, .portlet.white, .portlet > .portlet-body.white {
+        background-color: #fff;
+    }
+
+    .portlet.light.portlet-datatable.portlet-fit > .portlet-body {
+        padding-top: 10px;
+        padding-bottom: 25px;
+    }

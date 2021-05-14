@@ -1,0 +1,103 @@
+/*********************************************************************/
+/************** Progetti di Impresa Srl copyright 2006 ***************/
+/*********************************************************************/
+
+
+/*********************************************************************/
+/**** CONFIGURAZIONE GENERALE ****************************************/
+/*********************************************************************/
+
+IMG{
+	display: none;
+	border: none;
+}
+
+H1 {
+	font-size: 130%;
+}
+
+H2 {
+	font-size: 110%;
+}
+
+H3 {
+	font-size: 100%;
+}
+
+H4 {
+	font-size: 90%;
+	border:0px;
+}
+
+/*********************************************************************/
+/**** BOX MODIFICATI PER ALTO CONTRASTO ******************************/
+/*********************************************************************/
+
+#boxCalendarioEventi{
+	display: none;
+}
+
+#boxMenuSecondario {
+	position: relative;
+	clear: both;
+	z-index: 1;
+}
+
+.boxMenuSecondarioVoce {
+	position: relative;
+	clear: both;
+} 
+
+#boxMenuPrincipale UL LI {
+	position: relative;	
+	display: list-item;
+}
+
+#boxMenuPrincipale UL LI A {
+	position: relative;	
+	display: list-item;
+}
+
+#boxMenuPrincipale UL LI A.areaSelezionata {
+	position: relative;	
+	display: list-item;
+}
+
+.boxMenuSecondarioVoce UL LI {
+	position: relative;	
+	display: list-item;
+} 
+
+#boxMenuSecondario UL LI A {
+	position: relative;	
+	display: list-item;
+}
+
+.area
+{
+    padding: 0.5em 0;
+}
+
+.categoria
+{
+    padding: 0.2em 0.5em 0.2em 1em;
+}
+
+.pagina
+{
+    padding: 0.2em 0.5em 0.2em 2em;
+}
+
+.normale {
+display: none;
+}
+
+#boxNotizieHomePage .notiziaConFoto, #boxNotizieHomePage .notiziaConFoto2, #boxNotizieHomePage .notiziaConFoto3, #boxNotizieHomePage .notiziaConFoto4, #boxNotizieHomePage .notiziaSenzaFoto
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    margin: 10px 0% 10px 0px;
+    position: relative;
+    text-align: justify;
+}

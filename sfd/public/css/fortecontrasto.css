@@ -1,0 +1,878 @@
+/*********************************************************************/
+/************** Progetti di Impresa Srl copyright 2006 ***************/
+/*********************************************************************/
+
+/*********************************************************************/
+/**** CONFIGURAZIONE GENERALE ****************************************/
+/*********************************************************************/
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+p,
+blockquote{
+	margin: 0;
+	padding: 0;
+}
+
+fieldset,
+img {
+	border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var,
+optgroup {
+	font-style: inherit;
+	font-weight: inherit;
+}
+
+del,
+ins {
+	text-decoration: none;
+}
+
+caption,
+th {
+	text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+table,
+tr,
+td,
+th,
+p {
+	font-size: 100%;
+	font-weight: normal;
+}
+
+q:before,
+q:after {
+	content: '';
+}
+
+abbr,
+acronym {
+	border: 0;
+	font-variant: normal;
+}
+
+sup {
+	vertical-align: baseline;
+}
+
+sub {
+	vertical-align: baseline;
+}
+
+/*because legend doesn't inherit in IE */
+legend {
+	color: #000;
+}
+
+input,
+button,
+textarea,
+select,
+optgroup,
+option {
+	font-family: inherit;
+	font-size: inherit;
+	font-style: inherit;
+	font-weight: inherit;
+}
+
+/*@purpose To enable resizing for IE */
+/*@branch For IE6-Win, IE7-Win */
+input,
+button,
+textarea, 
+select {
+	font-size: 100%;
+}
+
+HTML
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 100%;
+    font-weight: normal;
+    color: white;
+	word-wrap: break-word;
+}
+
+BODY
+{
+    background-color: #000000;
+    color: white !important;
+}
+
+#DIV, DIV
+{
+    background-color: #000000;
+    color: white !important;
+    padding:0.2em 0;
+}
+
+IMG
+{
+    display: none;
+    border: none;
+}
+
+H1
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 130%;
+    font-style: normal;
+    font-weight: normal;
+    color: white;
+    padding:0.2em 0;
+}
+
+H2
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 110%;
+    font-style: normal;
+    font-weight: normal;
+    color: white;
+    padding:0.2em 0;    
+}
+
+H3, P
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 100%;
+    font-weight: normal;
+    color: white;
+    padding:0.2em 0;    
+}
+
+H4
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 90%;
+    font-style: normal;
+    font-weight: normal;
+    color: white;
+    padding:0.2em 0;
+}
+H5
+{
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 100%;
+    font-weight: normal;
+    color: white;    
+}
+H6
+{
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 100%;
+    font-weight: normal;
+    color: white;
+}
+
+H7
+{
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    color: white;
+}
+
+A, A:link, A:active, A:visited
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    color: yellow !important;
+    text-decoration: none;
+}
+
+
+A:hover
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    color: yellow !important;
+    text-decoration: underline;
+}
+
+FIELDSET
+{
+    clear:both;
+}
+
+
+#boxAccessibilitaModalitaVisualizzazione .normale
+{
+    display: none;
+}
+
+#formid_centro ul, #formid_centro ol 
+{
+    clear:both;
+    padding:0px;
+    margin-left:30px;
+}
+
+#boxBricioleDiPane
+{
+    clear:both;
+}
+
+
+#formid_intestazione1, #formid_intestazione2, #formid_intestazione3
+{
+    padding:5px 2%;
+}
+
+
+#formid_sx, #formid_dx, #formid_centro
+{
+    clear:both;
+    padding:5px 2%;
+    width:94%;
+    margin: 0 auto;
+}
+
+#formid_fondo1, #formid_fondo2, #formid_fondo3
+{
+    padding:5px 2%;
+}
+
+
+/*********************************************************************/
+/**** BOX MODIFICATI PER ALTO CONTRASTO ******************************/
+/*********************************************************************/
+
+#boxCalendarioEventi
+{
+    display: none;
+}
+
+.boxMenuSecondarioVoce
+{
+    visibility: visible !important;
+}
+
+.boxMenuSecondarioVoce UL LI
+{
+    display: inline;
+}
+
+legend
+{
+    color: yellow;
+}
+
+/*********************************************************************/
+/**** BOX MODIFICATI PER ALTO CONTRASTO ******************************/
+/*********************************************************************/
+
+#formid_centro #boxMascheraDiRicercaPerServizioStandard
+{
+    clear: both;
+    float: left;
+    width: 99.8%;
+    padding: 0px;
+    margin: 0px 0px 10px 0px;
+    border: 1px solid yellow;
+    margin: 10px 0;
+}
+
+* html #formid_centro #boxMascheraDiRicercaPerServizioStandard
+{
+    width: 98.2%;
+}
+
+
+#formid_centro #boxMascheraDiRicercaPerServizioStandard H3
+{
+    margin: 0px;
+    padding: 0px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 3px 1% 3px 1%;
+    clear: both;
+    color: yellow !important;
+    font-weight: normal;
+    font-size: 1.615em;
+    font-family: Kozuka Mincho Pro B;
+    letter-spacing: -1px;
+    font-weight: normal;
+    display: block;
+    border-bottom: 1px solid yellow;
+}
+
+* html #formid_centro #boxMascheraDiRicercaPerServizioStandard H3
+{
+    float: left;
+    width: 98.15%;
+}
+
+
+#formid_centro #boxMascheraDiRicercaPerServizioStandard H4
+{
+    padding: 5px 1%;
+    font-weight: normal;
+    position: relative;
+    text-align: justify;
+    clear: both;
+    margin-bottom: 0em;
+    border: 0px;
+}
+
+#formid_centro #boxMascheraDiRicercaPerServizioStandard H4:first-letter
+{
+    font-weight: bold;
+}
+
+#formid_centro #boxMascheraDiRicercaPerServizioStandard H6
+{
+    margin-right: 5px;
+    width: auto;
+    float: left;
+    text-decoration: underline;
+}
+
+
+#formid_centro #boxMascheraDiRicercaPerServizioStandard .separatoreCampoRicerca
+{
+    clear: both;
+    float: left;
+    width: 98%;
+    padding: 1%;
+}
+
+#formid_centro #boxMascheraDiRicercaPerServizioStandard .separatoreCampoRicerca LABEL
+{
+    clear: both;
+    float: left;
+    width: 45%;
+    text-align: left;
+    margin-right: 2%;
+    font-weight: bold;
+    margin-top: 2px;
+    text-align: left;
+    height: auto;
+}
+
+
+#formid_centro #boxMascheraDiRicercaPerServizioStandard .separatoreCampoRicerca INPUT
+{
+    float: left;
+    width: 51% !important;
+    position: relative;
+}
+
+#formid_centro #boxMascheraDiRicercaPerServizioStandard INPUT.campoData
+{
+    margin-right: 5px;
+    float: left;
+    width: 15% !important;
+}
+
+
+#boxMascheraDiRicercaPerServizioStandard .campoPulsante
+{
+    clear: both;
+    float: left;
+    text-align: center;
+    width: 100%;
+    margin: 10px 0px 0px 0px;
+    padding: 5px 0px 5px 0px;
+    border-top: 1px solid black;
+}
+
+#boxMascheraDiRicercaPerServizioStandard .campoPulsante input
+{
+    background-color: yellow;
+    border: 0px;
+    padding: 0.5em;
+    color: black;
+    cursor: pointer;
+    border: 1px solid yellow;
+}
+
+#boxMascheraDiRicercaPerServizioStandard .campoPulsante input:hover
+{
+    background-color: black;
+    border: 0px;
+    padding: 0.5em;
+    color: yellow;
+    border: 1px solid yellow;
+}
+
+#formid_centro #boxMascheraDiRicercaPerServizioStandard SELECT
+{
+    width: 52% !important;
+    float: left;
+    position: relative;
+}
+
+#formid_centro .Titolo1
+{
+    border-bottom: dotted 1px yellow;
+    padding: 5px 1%;
+    margin-bottom: 3px;
+    font-weight: bold;
+}
+
+#formid_centro .Titolo2
+{
+    display: block;
+    font-weight: bold;
+    padding: 5px 1%;
+    border-bottom: dotted 1px yellow;
+    margin-bottom: 3px;
+}
+
+#BoxServizioGenerico ul li 
+{
+    list-style: none;
+}
+
+#formid_centro #BoxServizioGenerico .Titolo2
+{
+    display: list-item;
+    list-style: disc;
+}
+
+#formid_centro .Titolo2
+{
+    display: block;
+    font-weight: bold;
+    padding: 5px 1%;
+    border-bottom: dotted 1px yellow;
+    margin-bottom: 3px;
+}
+
+#formid_centro .Titolo3
+{
+    border-bottom: solid 1px yellow;
+    padding: 3px 1%;
+    margin-bottom: 3px;
+    margin-top: 5px; /*font-style: italic;*/
+    font-size: 150%;
+}
+
+#formid_centro .Titolo4
+{
+    border-bottom: solid 1px yellow;
+    padding-bottom: 3px;
+    margin-bottom: 3px;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+#boxMenu1, #boxMenu2
+{
+    padding: 1em 0;
+}
+
+.area
+{
+    padding: 0.5em 0;
+}
+
+.categoria
+{
+    padding: 0.2em 0.5em 0.2em 1em;
+}
+
+.pagina
+{
+    padding: 0.2em 0.5em 0.2em 2em;
+}
+
+#formid_centro #boxPaginazioneServizioStandard
+{
+    clear: both;
+    padding: 0.5em 0px 0.5em 1%;
+    margin: 10px 0 2px;
+    border: 1px solid yellow;
+    float: left;
+    width: 98.8%;
+}
+
+#boxPaginazioneServizioStandard span.pagine
+{
+    padding: 0.3em 1em 0.3em 0.5em;
+}
+
+#boxPaginazioneServizioStandard span
+{
+    padding: 0.3em;
+}
+
+#boxPaginazioneServizioStandard a
+{
+    padding: 0.3em;
+}
+
+#boxPaginazioneServizioStandard a:hover
+{
+    background-color: yellow;
+    color: Black!important;
+}
+
+#boxAccessibilitaModalitaVisualizzazione
+{
+    display:block;
+    text-align:center;
+    padding:0.5em 0;
+}
+
+#boxAccessibilitaModalitaVisualizzazione a
+{
+    padding:0.2em;
+}
+
+#BoxAudioVideo #videoPlayer
+{
+    margin: 10px 0px 10px 0px;
+    max-width:100%!important;
+}
+
+#boxMenuOrizzontale .area {
+    width: 31%;
+    float: left;
+    text-align: center;
+    padding: 1em 1%;
+}
+
+.bookmarks-alto 
+{
+    display:none;
+}
+
+#boxProcedimenti li {
+list-style: none;
+}
+
+#boxProcedimenti ul {
+margin: 0 0 10px;
+}
+
+
+/*********************************************************************/
+/************************* BOX COVER FLOW ****************************/
+/*********************************************************************/
+
+#boxcowerflow
+{  
+    height: 150px!important;
+    padding: 10px 1%!important;
+    color:White!important;
+    width:100%!important;
+    height: auto!important;
+}
+
+.forward, .backward {
+    height:150px!important
+}
+
+#boxcowerflow .jimages {
+    width:100%!important;
+    margin-top: -150px!important;
+}
+
+.forward {
+margin-top: -150px!important;
+}
+
+#boxcowerflow .jimages div {
+width: 100%!important;
+}
+
+#boxcowerflow .AreeInterne_Area 
+{
+    display:none!important;
+}
+
+* hrml #boxcowerflow .AreeInterne_Area 
+{
+    background:none!important;
+}
+
+#boxcowerflow div.AreeInterne_Area1 {
+    height: 145px!important;
+    margin-top: 0px!important;
+    margin-left: 0px!important;
+    width: 90%!important;
+    z-index: 100;
+    padding-top: 0!important;
+    padding-left: 0!important;
+    color: white!important;
+    margin: 5px 5%!important;
+}
+
+#boxcowerflow .descrittivoSlide {
+    padding: 10px 0px!important;
+    display: block!important;
+    width: 100%!important;
+    height: 135px!important;
+    overflow: hidden;
+    color:White!important;
+}
+
+#boxcowerflow .titoloSlide {
+    color: white!important;
+    font-size: 20px !important;
+    width: 100%!important;
+    margin: 0px !important;
+    padding: 0 0 5px 0 !important;
+    border-bottom: 1px solid white!important;
+    display: block!important;
+    max-height: 45px;
+    overflow: hidden;
+}
+
+#boxcowerflow .linkSlide {
+    padding: 5px 0 !important;
+    border-bottom: 1px solid white!important;
+    max-height: 54px !important;
+    color: white!important;
+    overflow: hidden;
+}
+
+.jslidetabs 
+{
+    padding:20px 0!important;
+}
+
+
+/*********************************************************************/
+/*************************NOTIZIE ****************************/
+/*********************************************************************/
+
+#boxNotizieHomePage
+{
+    clear:both;
+}
+
+
+#boxNotizieHomePage .notiziaConFoto, #boxNotizieHomePage .notiziaConFoto2, #boxNotizieHomePage .notiziaConFoto3, #boxNotizieHomePage .notiziaConFoto4, #boxNotizieHomePage .notiziaSenzaFoto
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    margin: 10px 0% 10px 0px;
+    position: relative;
+    text-align: justify;
+}
+
+
+
+/*********************************************************************/
+/*************************MENU1 ****************************/
+/*********************************************************************/
+
+
+#boxMenu1
+{
+    width: 98%;
+    position: relative;
+    display: block;
+    padding: 10px 1% 0 1%;
+}
+
+#boxMenu1 .Sinistra
+{
+    display: inline-block;
+    width: 49%;
+    padding-right: 1%;
+    vertical-align: top;
+    position: relative;
+}
+
+#boxMenu1 .Destra
+{
+    display: inline-block;
+    width: 49.2%;
+    padding-left: 0.1%;
+    vertical-align: top;
+    position: relative;
+}
+
+#boxMenu1 .InizioArea
+{
+    display: block;
+    padding-bottom: 0.5em;
+    position: relative;
+}
+
+#boxMenu1 .InizioArea .Area
+{
+    display: block;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    padding: 6px 0 3px;
+    position: relative;
+}
+
+#boxMenu1 .InizioArea .Categoria
+{
+    display: block;
+    line-height: 1.2em;
+    position: relative;
+}
+
+
+/*********************************************************************/
+/*************************banner menu destra ****************************/
+/*********************************************************************/
+
+#BoxServizioGenerico .Riga
+{
+    clear: both;
+border-top: 1px solid yellow;    
+}
+
+#BoxServizioGenerico .Riga.RigaHeader 
+{
+    font-size:1.1em;
+font-weight: bold;
+}
+
+#BoxServizioGenerico .Riga .Colonna1
+{
+    clear: both;
+    float: left;
+    width: 13%;
+    margin-right: 0.5%;
+}
+
+#BoxServizioGenerico .Riga .Colonna2
+{
+    float: left;
+    width: 13%;
+    margin-right: 0.5%;
+}
+
+#BoxServizioGenerico .Riga .Colonna3
+{
+    float: left;
+    width: 13%;
+    margin-right: 0.5%;
+}
+
+#BoxServizioGenerico .Riga .Colonna4
+{
+    float: left;
+    width: 13%;
+    margin-right: 0.5%;
+}
+
+#BoxServizioGenerico .Riga .Colonna5
+{
+    float: left;
+    width: 11%;
+    margin-right: 0.5%;
+}
+
+#BoxServizioGenerico .Riga .Colonna6
+{
+    float: left;
+       width: 11%;
+    margin-right: 0.5%; 
+}
+
+
+#BoxServizioGenerico .Riga .Colonna7
+{
+    float: left;
+    width: 11%;
+    margin-right: 0.5%;
+}
+
+#BoxServizioGenerico .Riga .Colonna8
+{
+    float: left;
+    width: 11%;
+    margin-right: 0%;
+}
+
+#BoxServizioGenerico div.sinistra {
+clear: both;
+}
+
+/*********************************************************************/
+/*************************banner menu destra ****************************/
+/*********************************************************************/
+
+#boxSondaggiArchivio .boxSondaggioRisultato .boxSondaggioDettaglio .boxSondaggioDati .boxSondaggioBox{
+	float:left;
+	width:28%;
+	padding:0px 2%;
+	margin:0;
+	display:inline;
+}
+
+#boxSondaggiArchivio .boxSondaggioRisultato .boxSondaggioDettaglio .boxSondaggioIntestazione .boxSondaggioBox{
+	font-weight:bold;
+	font-size:100%;
+	line-height:1.8em;
+    float:left;
+	width:28%;
+	padding:0px 2%;
+	margin:0;
+	display:inline;	
+}
+
+#boxSondaggiArchivio ul
+{
+    clear:both;
+}
+
+.boxSondaggiScelta
+{
+    clear:both;
+    padding:1em 0;    
+}
+
+.boxSondaggioDati {
+clear: both;
+padding:1em 0;
+}
+
+#Boomarks .Boomarks, #Boomarks .Boomarks2 {
+    display: inline;
+    padding: 2px 2% 2px 0%;
+    line-height: 200%;
+}

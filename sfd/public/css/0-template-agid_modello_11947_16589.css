@@ -1,0 +1,2691 @@
+﻿/*******************************************************************/
+/******************** GRAFICA AGID - 2016 **************************/
+/*******************************************************************/
+
+html {
+    font-size: 1.125em;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.h1, h1 {
+    /* font-size: 3.000em; */
+    font-size: 1.778em;
+}
+
+.h2, h2 {
+    /* font-size: 2.222em; */
+    font-size: 1.278em;
+}
+
+.h3, h3 {
+    /* font-size: 1.778em; */
+    font-size:1em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.h4, h4 {
+     font-size: 1em; 
+}
+
+.h5, h5 {
+     font-size: 1em; 
+}
+
+.h6, h6 {
+    font-size: 1em;
+}
+
+p {
+    font-size: 1.000em;
+}
+
+body {
+    background-color: white;
+}
+
+.MascheraRicerca {
+    position: relative;
+    padding: 1rem;
+    border: solid #f7f7f9;
+    border-width: .2rem 0 .2rem 0;
+    margin-right: -24px;
+    margin-left: -10px;
+}
+
+.panel-default {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #454545;
+    text-decoration: none;
+}
+
+    a:visited {
+        color: #454545;
+    }
+
+    a:focus, a:hover {
+        color: #383838;
+        text-decoration: underline;
+    }
+
+.font-larger {
+    font-size: 1.4rem;
+    line-height: 1.4em;
+}
+
+.text-normal {
+    font-weight: 400;
+}
+
+time {
+    font-style: italic;
+}
+
+img {
+    max-width: 100%;
+}
+
+.full-size {
+    width: 100%;
+}
+
+    .full-size img {
+        width: 100%;
+    }
+
+#overlay {
+    background: #000000 none repeat scroll 0 0;
+    height: 100%;
+    left: 580px;
+    opacity: 0.4;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.hidden, .hide {
+    display: none;
+    background: white !important;
+    color: black !important;
+}
+
+.sr-only {
+    background: white !important;
+    color: black !important;
+}
+
+.ie6 .hidden-ie6 {
+    display: none;
+}
+
+.ie7 .hidden-ie7 {
+    display: none;
+}
+
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    padding-bottom: 0;
+}
+
+
+
+.text-primary {
+    color: #06c;
+}
+
+a.text-primary:focus,
+a.text-primary:hover {
+    color: #004d99;
+}
+
+.navbar-default .navbar-toggle {
+    display: block;
+}
+
+.navbar-default, .navbar-default * {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+    .navbar-default .col-sm-4 {
+        margin: 0;
+        padding: 0;
+    }
+
+a:focus {
+    outline: #ff8c00 solid 3px;
+}
+
+#formid_centro {
+    background: white;
+    min-height: 400px;
+}
+
+    #formid_centro .container, #formid_centro .container-fluid {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+.grigio-40-color {
+    color: #474E54;
+}
+
+.home-alternate-container {
+    background-color: #F4F4F4;
+}
+
+/*******************************************************************/
+/******* BARRA INTESTAZIONE 1 CON ENTE DI APPARTENENZA *************/
+/*******************************************************************/
+
+header {
+    line-height: 0;
+}
+
+    header * {
+        line-height: 1em;
+    }
+
+    header .header-top {
+        width: 100%;
+        background-color: white;
+        height: 2.6rem;
+        color: #335AA7;
+        font-size: 1rem;
+        font-weight: bold;
+        display: inline-block;
+        line-height: 2.6rem;
+        vertical-align: middle;
+        padding-bottom: 0;
+    }
+
+        header .header-top * {
+            line-height: 2rem;
+        }
+
+        header .header-top A, header .header-top A:link, header .header-top A:visited, header .header-top A:active {
+            color: #335AA7;
+        }
+
+        header .header-top .container {
+            width: 100%;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        header .header-top img, header .header-top .glyphicon {
+            padding-right: 1rem;
+        }
+
+        header .header-top .accesso-servizi {
+            text-align: right;
+        }
+
+    /*******************************************************************/
+    /**************** BARRA INTESTAZIONE 2 *****************************/
+    /*******************************************************************/
+
+    header .header-middle {
+        width: 100%;
+        background-color: #335AA7;
+        color: White;
+        font-size: 1rem;
+        display: inline-block;
+        vertical-align: middle;
+        padding-bottom: 0;
+        height: 150px;
+        overflow-y: hidden;
+    }
+
+        header .header-middle .container {
+            width: 100%;
+        }
+
+    /*******************************************************************/
+    /**************** BARRA INTESTAZIONE 3 *****************************/
+    /*******************************************************************/
+
+    header .header-bottom {
+        width: 100%;
+        font-size: 1rem;
+        display: inline-block;
+    }
+
+        header .header-bottom .container {
+            width: 100%;
+            padding: 0;
+        }
+
+        header .header-bottom .row {
+            width: 100%;
+            margin: 0;
+        }
+
+/*******************************************************************/
+/********************* ICONA MENU ECM ******************************/
+/*******************************************************************/
+
+#formid_intestazione2 .burger-wrapper {
+    z-index: 500;
+}
+
+    #formid_intestazione2 .burger-wrapper * {
+        z-index: 500;
+    }
+
+    #formid_intestazione2 .burger-wrapper #burger-wrapper {
+        width: auto;
+        text-align: center;
+        text-transform: uppercase;
+        padding-top: .5em;
+        padding-top: .5rem;
+    }
+
+#burger-wrapper .menu-icon {
+    font-size: .6rem;
+    display: block;
+}
+
+#nav-icon {
+    width: auto;
+    height: auto;
+    font-size: 3rem;
+    position: relative;
+    color: White;
+    display: block;
+    padding: 0 5px;
+    max-width: 70px;
+}
+
+    #nav-icon:focus {
+        border: 3px solid red;
+    }
+
+    #nav-icon span {
+        display: block;
+    }
+
+/*******************************************************************/
+/********************** MENU ECM ***********************************/
+/*******************************************************************/
+#boxTotale {
+    transition: all 0.3s ease 0s;
+}
+
+    #boxTotale.menu-open {
+        margin-left: 580px;
+        margin-right: -580px;
+    }
+
+#menuEcm * {
+    z-index: 500;
+}
+
+#menuEcm {
+    transition: all 0.3s ease 0s;
+    display: block;
+    position: fixed;
+    width: 580px;
+    top: 0;
+    z-index: 500;
+    height: 100%;
+    overflow-y: scroll;
+    padding-top: 2.6rem;
+}
+
+    #menuEcm.menu-close {
+        left: -582px;
+    }
+
+    #menuEcm.menu-open {
+        left: 0;
+    }
+
+    .bm-item ul {
+        margin-left: 0;
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .bm-item .navbar-nav li {
+        display: block;
+        width: 100%;
+        border-top: 1px solid #e7e7e7;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+    }
+
+        .bm-item .navbar-nav li a {
+            padding: .5rem 1%;
+            display: block;
+            color: #494949;
+        }
+
+        .bm-item .navbar-nav li a.ico-cat {
+            text-align: center;
+        }
+
+    .bm-item ul.boxCategorie li.categoria {
+        background: #D3D3D3;
+    }
+
+    .bm-item ul.boxCategorie li .spanCategoria a {
+        padding-left: 1rem;
+        color: Black;
+    }
+
+    .bm-item ul.boxCategorie li.pagina {
+        background: #B3B3B3;
+    }
+
+    .bm-item ul.boxPagine li .spanPagina a {
+        padding-left: 2rem;
+        color: Black;
+    }
+
+    .bm-item ul.boxCategorie li.sottoPagina {
+        background: #555555;
+    }
+
+    .bm-item ul.boxSottoPagine li .spanSottoPagina a {
+        padding-left: 3rem;
+        color: White;
+    }
+
+    .bm-item ul li .spanArea {
+        display: inline-block;
+        width: 89%;
+        vertical-align: middle;
+    }
+
+    .bm-item ul li .spanCategoria {
+        display: inline-block;
+        width: 89%;
+        vertical-align: middle;
+    }
+
+    .bm-item ul li .spanPagina {
+        display: inline-block;
+        width: 89%;
+        vertical-align: middle;
+    }
+
+    .bm-item ul li .collapse-icon {
+        display: inline-block;
+        width: 10%;
+        vertical-align: middle;
+    }
+
+    .bm-item .navbar-nav li a.selected {
+        font-weight: bold;
+    }
+
+/*******************************************************************/
+/********************** MENU ECM interno ***********************************/
+/*******************************************************************/
+.module-inner .module-ct h3, .module-inner .module-ct span.h3 {
+    color: black;
+    background-color: #C8CCCE;
+    padding: 15px;
+    display: block;
+}
+
+.module-inner li {
+    color: #000;
+    background-color: #e5e5e5;
+    padding: 15px;
+    margin: 0;
+    list-style: none;
+}
+
+    .module-inner li a {
+        display: block;
+    }
+
+/*******************************************************************/
+/******************* LOGO E NOME DELL'ENTE *************************/
+/*******************************************************************/
+
+.logo-nome-ente {
+    font-size: 1.8em;
+    font-size: 1.8rem;
+}
+
+    .logo-nome-ente A {
+        display: inline-block;
+        color: White;
+        text-decoration: none;
+    }
+
+    .logo-nome-ente .logo-wrapper {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .logo-nome-ente img.logo {
+        width: 4rem;
+        height: 4rem;
+        margin-right: 1rem;
+    }
+
+    .logo-nome-ente span.nome-wrapper {
+        display: inline-block;
+        vertical-align: middle;
+        font-weight: bold;
+    }
+
+header .header-middle-right .container {
+    padding: 0;
+}
+
+/*******************************************************************/
+/************** SELEZIONE LINGUA PORTALE ***************************/
+/*******************************************************************/
+
+.multilingua {
+    display: inline-block;
+    font-size: 0.778em;
+    font-size: .8rem;
+    margin-bottom: 1em;
+}
+
+    .multilingua A {
+        color: White;
+        display: block;
+    }
+
+    .multilingua .ico-lingua {
+        border: 2px solid white;
+        color: White;
+        text-transform: uppercase;
+        margin: 0 5px 2px 0;
+        padding: 0 5px;
+        display: inline-block;
+        width: 45px;
+        text-align: center;
+    }
+
+/*******************************************************************/
+/************** ICONE PER ACCESSO PAGINE SOCIAL ********************/
+/*******************************************************************/
+
+.nav-social .list-inline li {
+    padding: 0;
+}
+
+.nav-social a {
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 0.78em;
+}
+
+.nav-social a {
+    background: #ffffff;
+    color: #4D5861;
+    display: inline-block;
+    text-align: center;
+    margin: 0 2px 0 2px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+    .nav-social a:hover {
+        background: #3A4249;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+/*******************************************************************/
+/************** RICERCA NEL SITO ***********************************/
+/*******************************************************************/
+
+#boxRicercaNelSito {
+}
+
+    #boxRicercaNelSito input {
+        color: Black;
+        height: 48px;
+        display: inline-block;
+        vertical-align: top;
+        padding: 0 1rem;
+        width: 60%;
+    }
+
+    #boxRicercaNelSito .pulsanteRicerca {
+        background: #D3D6D8 none repeat scroll 0 0;
+        border: 0 none;
+        color: #000;
+        cursor: pointer;
+        font-size: 1.39em;
+        height: 48px;
+        margin: 0;
+        padding: 0;
+        width: 48px;
+    }
+
+#ricercaMobile.container {
+    clear: both;
+}
+
+.BtnRicercaMobile .pulsanteRicerca {
+    background: #D3D6D8 none repeat scroll 0 0;
+    border: 0 none;
+    color: #000;
+    cursor: pointer;
+    font-size: 1.39em;
+    height: 48px;
+    margin: 0;
+    padding: 0;
+    width: 48px;
+}
+
+header .header-middle #ricercaMobile {
+    background-color: #F0F0F0;
+    left: 0;
+    padding: 8px 8px 0;
+    position: absolute;
+    right: 0;
+    top: 135px;
+    z-index: 10;
+}
+
+    header .header-middle #ricercaMobile input {
+        color: Black;
+        height: 48px;
+        display: inline-block;
+        vertical-align: top;
+        padding: 0 1rem;
+        width: 98%;
+    }
+
+    header .header-middle #ricercaMobile .pulsanteRicerca {
+        background: #D3D6D8 none repeat scroll 0 0;
+        border: 0 none;
+        color: #000;
+        cursor: pointer;
+        font-size: 1.39em;
+        height: 48px;
+        margin: 0;
+        padding: 0;
+        width: 48px;
+        margin-left: -48px;
+    }
+
+/*******************************************************************/
+/************** MENU ORIZZONTALE OPZIONALE *************************/
+/*******************************************************************/
+
+.sub-nav-container {
+    /*background-color: #9CA2A7;*/
+    background-color: #d3d3d3;
+}
+
+.sub-nav.navbar-nav {
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+}
+
+    .sub-nav.navbar-nav > li {
+    }
+
+        .sub-nav.navbar-nav > li A {
+            /*color: White;*/
+            color: black;
+        }
+
+            .sub-nav.navbar-nav > li A:hover {
+                /*color: White;*/
+                text-decoration: underline;
+            }
+
+/*******************************************************************/
+/************** BANNER SLIDER HOMEPAGE *****************************/
+/*******************************************************************/
+
+#slideshowWrapper {
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
+ul#slideshow {
+    list-style: none;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    width: 100% !important;
+    height: 300px !important;
+    overflow: hidden;
+}
+
+    ul#slideshow li.singolo-banner {
+        display: none;
+        width: 100% !important;
+        height: 300px !important;
+    }
+
+        ul#slideshow li.singolo-banner.item-number1 {
+            display: list-item;
+        }
+
+        ul#slideshow li.singolo-banner span {
+            -webkit-backface-visibility: hidden !important;
+        }
+
+
+/*******************************************************************/
+/**************** HEADER SMALL CON SCROLL VERTICALE ****************/
+/*******************************************************************/
+body.onscroll header.header_container {
+    position: fixed !important;
+    border-bottom: 1px solid #c2c2c2 !important;
+    z-index: 499;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    opacity: 1;
+    padding: 0;
+    z-index: 5 !important;
+}
+
+    body.onscroll header.header_container #formid_intestazione1 {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        height: 0;
+        display: none;
+    }
+
+    body.onscroll header.header_container .header-middle {
+        height: 62px;
+        -webkit-transition: height 1s;
+        transition: height 1s;
+        padding-top: .5rem;
+    }
+
+        body.onscroll header.header_container .header-middle .container {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+    body.onscroll header.header_container #formid_intestazione2 .burger-wrapper #burger-wrapper {
+        padding-top: 0;
+    }
+
+    body.onscroll header.header_container .header-middle .burger-wrapper #burger-wrapper #nav-icon {
+        font-size: 2em;
+        font-size: 2rem;
+    }
+
+        body.onscroll header.header_container .header-middle .burger-wrapper #burger-wrapper #nav-icon .menu-icon {
+            display: none;
+        }
+
+    body.onscroll header.header_container .header-middle .logo-nome-ente img.logo {
+        width: 2.5em;
+        height: 2.5em;
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-right: 1em;
+        margin-right: 1rem;
+    }
+
+    body.onscroll header.header_container .header-middle .multilingua {
+        display: none;
+    }
+
+    body.onscroll header.header_container .header-middle .nav-social {
+        display: none;
+    }
+
+    body.onscroll header.header_container .header-middle .menuEcm {
+        position: fixed;
+        z-index: 1000;
+    }
+
+    body.onscroll header.header_container #formid_intestazione3 {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        height: 0;
+        display: none;
+    }
+
+
+body.onscroll .main_container {
+    padding-top: 150px;
+}
+
+/*******************************************************************/
+/******************** NOTIZIE HOMEPAGE *****************************/
+/*******************************************************************/
+
+.notizie-con-foto-container .panel-default .panel-body {
+    padding: 0;
+}
+
+    .notizie-con-foto-container .panel-default .panel-body .figure {
+        width: 100%;
+    }
+
+        .notizie-con-foto-container .panel-default .panel-body .figure img {
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+        }
+
+    .notizie-con-foto-container .panel-default .panel-body .content {
+        padding: 0 24px 24px;
+    }
+
+        .notizie-con-foto-container .panel-default .panel-body .content .data-news {
+            padding-top: 10px;
+            display: block;
+        }
+
+        .notizie-con-foto-container .panel-default .panel-body .content .titolo-news {
+            font-size: 1.389em;
+        }
+
+/*******************************************************************/
+/******************** EVENTI HOMEPAGE ******************************/
+/*******************************************************************/
+
+.prossimi-eventi-container .panel-default {
+    background-color: #C8CCCE;
+}
+
+    .prossimi-eventi-container .panel-default .panel-body {
+        padding: 0;
+    }
+
+        .prossimi-eventi-container .panel-default .panel-body .figure {
+            width: 100%;
+        }
+
+            .prossimi-eventi-container .panel-default .panel-body .figure img {
+                width: 100%;
+                border-radius: 10px 10px 0 0;
+            }
+
+        .prossimi-eventi-container .panel-default .panel-body .content {
+            padding: 0 24px 24px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+            .prossimi-eventi-container .panel-default .panel-body .content .titolo-evento {
+                font-size: 1.389em;
+            }
+
+/*div.content h3.titolo-evento a { color: white; }*/
+
+
+/*******************************************************************/
+/************ BANNER ELENCO SERVIZI HOMEPAGE ***********************/
+/*******************************************************************/
+
+#servizi-home .nav > li {
+    margin: 3px 0;
+}
+
+    #servizi-home .nav > li > a {
+        background-color: #C8CCCE;
+        color: black;
+    }
+
+        #servizi-home .nav > li > a:active,
+        #servizi-home .nav > li > a:focus,
+        #servizi-home .nav > li > a:hover {
+            background-color: #4D5861;
+            color: white;
+        }
+
+/*******************************************************************/
+/************ BANNER OBBLIGHI ISTITUZIONALI HOMEPAGE ***************/
+/*******************************************************************/
+
+#obblighi-home .nav > li {
+    margin: 3px 0;
+}
+
+    #obblighi-home .nav > li > a {
+        background-color: white;
+        color: black;
+        border: 1px solid #ddd;
+    }
+
+        #obblighi-home .nav > li > a:active,
+        #obblighi-home .nav > li > a:focus,
+        #obblighi-home .nav > li > a:hover {
+            background-color: #4D5861;
+            border-color: #4D5861;
+            color: white;
+        }
+
+/*******************************************************************/
+/************ BANNER BACHECA HOMEPAGE ******************************/
+/*******************************************************************/
+
+#bacheca-home .nav > li {
+    margin: 3px 0;
+}
+
+    #bacheca-home .nav > li > a {
+        background-color: #C8CCCE;
+        color: black;
+    }
+
+        #bacheca-home .nav > li > a:active,
+        #bacheca-home .nav > li > a:focus,
+        #bacheca-home .nav > li > a:hover {
+            background-color: #4D5861;
+            color: white;
+        }
+
+
+/*******************************************************************/
+/************ CALENDARIO EVENTI ************************************/
+/*******************************************************************/
+#boxCalendarioEventi .CalendarioMesePrecedente {
+    display: block;
+    width: 100%;
+    background: #4D5861;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    padding: .5rem 0;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: white;
+}
+
+    #boxCalendarioEventi .CalendarioMesePrecedente a {
+        color: white;
+    }
+
+#boxCalendarioEventi .CalendarioEventi {
+    float: left;
+    width: 100%;
+    background: #f7f7f9;
+    border: 1px solid #e1e1e8;
+    text-align: center;
+}
+
+    #boxCalendarioEventi .CalendarioEventi .tr {
+        display: block;
+        width: 100%;
+    }
+
+        #boxCalendarioEventi .CalendarioEventi .tr span {
+            float: left;
+            background: #f7f7f9;
+            width: 14.2857%;
+            padding: 2px 0;
+        }
+
+            #boxCalendarioEventi .CalendarioEventi .tr span a {
+                display: block;
+                width: 98%;
+                background: #C8CCCE;
+                border: none;
+                color: black;
+            }
+
+                #boxCalendarioEventi .CalendarioEventi .tr span a:hover {
+                    background-color: #4D5861;
+                    color: white;
+                }
+
+/*******************************************************************/
+/************ BANNER DINAMICI HOME - APPROFONDIMENTI ***************/
+/*******************************************************************/
+
+.banner-home-container .panel-default .panel-body {
+    padding: 0;
+}
+
+    .banner-home-container .panel-default .panel-body .figure {
+        width: 100%;
+        height: 180px;
+        overflow: hidden;
+    }
+
+        .banner-home-container .panel-default .panel-body .figure span {
+            display: block;
+            width: 100%;
+            height: 180px;
+            background-size: cover;
+            background-position: center center;
+        }
+
+            .banner-home-container .panel-default .panel-body .figure span img {
+                width: 100%;
+                height: 100%;
+                border-radius: 10px 10px 0 0;
+            }
+
+    .banner-home-container .panel-default .panel-body .content .titolo {
+        padding: 10px 0;
+        display: block;
+        float: left;
+        width: 100%;
+        text-align: center;
+        background-color: #4D5861;
+        color: white;
+    }
+
+        .banner-home-container .panel-default .panel-body .content .titolo a {
+            color: white;
+        }
+
+/*******************************************************************/
+/************ BANNER STATICO CON LINK CARTOGRAFIA ******************/
+/*******************************************************************/
+
+#cartografia-home {
+    background-color: white;
+    background-image: url('/immagini/banner/banner-world.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 250px;
+}
+
+    #cartografia-home a {
+        color: black;
+    }
+
+/*******************************************************************/
+/************ FOOTER1 - BARRA DI FEEDBACK **************************/
+/*******************************************************************/
+
+#barra-feedback {
+    background-color: #d3d3d3;
+}
+
+    #barra-feedback .container {
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+
+    #barra-feedback a {
+        color: black;
+    }
+
+/*******************************************************************/
+/********************* FOOTER2 *************************************/
+/*******************************************************************/
+
+#formid_fondo2 {
+    background-color:  #335AA7;
+    color: white;
+}
+
+    #formid_fondo2 .testo-scuro {
+        color: #c6cace;
+    }
+
+    #formid_fondo2 a {
+        color: #65dde0;
+    }
+
+    #formid_fondo2 .container {
+        padding-bottom: 0;
+    }
+
+    /*******************************************************************/
+    /*************** FOOTER2 - LOGO E NOME ENTE ************************/
+    /*******************************************************************/
+
+    #formid_fondo2 .logo-nome-ente {
+        width: 100%;
+    }
+
+        #formid_fondo2 .logo-nome-ente a {
+            color: white;
+        }
+
+/*******************************************************************/
+/********************* FOOTER3 *************************************/
+/*******************************************************************/
+
+#formid_fondo3 {
+    background-color: #335AA7;
+    color: white;
+}
+
+    #formid_fondo3 .testo-scuro {
+        color: #c6cace;
+    }
+
+    #formid_fondo3 a {
+        color: #65dde0;
+    }
+
+    #formid_fondo3 .container {
+        padding-top: 0;
+    }
+
+/*******************************************************************/
+/*************** FOOTER3 - MENU ECM ********************************/
+/*******************************************************************/
+
+#boxMenuCentro {
+}
+
+#boxMenuCentroSotto {
+    clear: both;
+    float: left;
+    position: relative;
+    text-align: left;
+    width: 100%;
+}
+
+#boxMenuCentro .categoria {
+    clear: both;
+    float: left;
+    position: relative;
+    text-align: left;
+    width: 95%;
+    color: #333;
+    font-size: 1em;
+    line-height: 1.2em;
+    margin-bottom: 6px;
+    padding: 6px 0 0;
+}
+
+    #boxMenuCentro .categoria a {
+        display: block;
+        position: relative;
+        text-align: left;
+    }
+
+#boxMenuCentro .pagina {
+    clear: both;
+    display: block;
+    float: left;
+    position: relative;
+    width: 95%;
+    font-size: 0.886em;
+    line-height: 1.2em;
+    margin-bottom: 5px;
+    padding: 0;
+    width: 95%;
+}
+
+    #boxMenuCentro .pagina a {
+        display: block;
+        background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+        font-weight: normal;
+        padding: 0;
+        position: relative;
+    }
+
+#boxMenuCentro .FineArea {
+    border-bottom: 1px dotted #c8c8c8;
+    clear: both;
+    float: left;
+    padding-top: 1.5%;
+    position: relative;
+    width: 95%;
+    font-size: 0.3em;
+    display: none;
+}
+
+#boxMenuCentro .FineCategoria {
+    clear: both;
+    float: left;
+    font-size: 0.3em;
+    padding-top: 6px;
+    position: relative;
+    width: 95%;
+}
+
+#boxMenuCentro .InizioCategoria {
+    border-top: 1px dotted #c8c8c8;
+    clear: both;
+    float: left;
+    font-size: 0.3em;
+    padding-bottom: 3px;
+    position: relative;
+    width: 95%;
+}
+
+/*******************************************************************/
+/*************** FOOTER3 - RECAPITI ********************************/
+/*******************************************************************/
+
+.recapiti p {
+    border-top: 1px dotted #c8c8c8;
+    padding-top: 6px;
+    width: 95%;
+}
+
+
+.social ul {
+    border-top: 1px dotted #c8c8c8;
+    padding-top: 6px;
+    width: 95%;
+}
+
+.social p {
+    border-top: 1px dotted #c8c8c8;
+    padding-top: 6px;
+    width: 95%;
+}
+
+/*******************************************************************/
+/*************** FOOTER3 - SOCIAL & CREDITS ************************/
+/*******************************************************************/
+
+#formid_fondo3 .nav-social a {
+    color: #30373d;
+    background-color: #65dde0;
+}
+
+    #formid_fondo3 .nav-social a:hover {
+        background-color: white;
+    }
+
+/*******************************************************************/
+/*************** BRICIOLE DI PANE - NAVIGAZIONE ********************/
+/*******************************************************************/
+
+.boxBricioleDiPane {
+    display: block;
+    margin: 0;
+    padding: .5rem .5rem 0;
+    background-color: White;
+}
+
+/*******************************************************************/
+/*************** MENU NASCOSTO AREA RISERVATA ********************/
+/*******************************************************************/
+
+.MenuAreaRisevata {
+    display: block;
+    margin: 0;
+    padding: .5rem .5rem 0;
+    background-color: White;
+    margin-top: .5rem !important;
+}
+
+/*******************************************************************/
+/************** PAGINA AREE TEMATICHE ******************************/
+/*******************************************************************/
+
+.aree-tematiche .tema {
+    padding-bottom: 1rem;
+}
+
+.aree-tematiche .immagine {
+    height: 169px;
+    background-color: lightblue;
+}
+
+    .aree-tematiche .immagine img {
+        width: 100%;
+        height: auto;
+    }
+
+.aree-tematiche .descrizione {
+    background: #C8CCCE;
+    color: black;
+    padding: .5rem 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+    .aree-tematiche .descrizione a {
+        display: block;
+    }
+
+/*******************************************************************/
+/************** DETTAGLIO SERVIZI - CLASSI COMUNI ******************/
+/*******************************************************************/
+
+.data-contenuto {
+    padding: 0 0 .5em 0;
+}
+
+.pull-right.immagine-dettaglio {
+    margin-left: 1rem;
+    margin-bottom: .5rem;
+    max-width: 60%;
+}
+
+    .pull-right.immagine-dettaglio img {
+        border-radius: 5px;
+        max-width: 100%;
+    }
+
+/*******************************************************************/
+/*********** MASCHERA DI RICERCA PER SERVIZI STANDARD **************/
+/*******************************************************************/
+
+#boxMascheraDiRicercaPerServizioStandard, .boxMascheraDiRicercaPerServizioStandard {
+    clear: both;
+}
+
+    #boxMascheraDiRicercaPerServizioStandard h3,
+    #boxMascheraDiRicercaPerServizioStandard .h3, .boxMascheraDiRicercaPerServizioStandard h3,
+    .boxMascheraDiRicercaPerServizioStandard .h3 {
+        margin: 0;
+        padding: 0;
+    }
+
+    #boxMascheraDiRicercaPerServizioStandard h4,
+    #boxMascheraDiRicercaPerServizioStandard .h4, .boxMascheraDiRicercaPerServizioStandard h4,
+    .boxMascheraDiRicercaPerServizioStandard .h4 {
+        margin: 0;
+        padding: 0;
+    }
+
+    #boxMascheraDiRicercaPerServizioStandard h6,
+    #boxMascheraDiRicercaPerServizioStandard .h6, .boxMascheraDiRicercaPerServizioStandard h6,
+    .boxMascheraDiRicercaPerServizioStandard .h6 {
+        float: left;
+        margin: 0;
+        margin-right: 1%;
+        min-width: 4%;
+        margin-bottom: 10px;
+        clear: both;
+        margin-left: 30%;
+    }
+
+    #boxMascheraDiRicercaPerServizioStandard .separatoreCampoRicerca .h6:first-of-type, .boxMascheraDiRicercaPerServizioStandard .separatoreCampoRicerca .h6:first-of-type {
+        clear: none;
+        margin-left: 0;
+    }
+
+    /*#boxMascheraDiRicercaPerServizioStandard .separatoreCampoRicerca, .boxMascheraDiRicercaPerServizioStandard .separatoreCampoRicerca {
+        clear: both;
+        float: left;
+        padding: .2rem 0;
+        width: 100%;
+    }
+
+        #boxMascheraDiRicercaPerServizioStandard .separatoreCampoRicerca label, .boxMascheraDiRicercaPerServizioStandard .separatoreCampoRicerca label {
+            clear: left;
+            float: left;
+            width: 30%;
+            text-align: right;
+            padding-right: 2%;
+        }
+
+        #boxMascheraDiRicercaPerServizioStandard .separatoreCampoRicerca input, .boxMascheraDiRicercaPerServizioStandard .separatoreCampoRicerca input {
+            float: left;
+            width: 50%;
+            min-width: 50%;
+            max-width: 50%;
+        }
+
+            #boxMascheraDiRicercaPerServizioStandard .separatoreCampoRicerca input.campoData, .boxMascheraDiRicercaPerServizioStandard .separatoreCampoRicerca input.campoData {
+                float: left;
+                width: 45%;
+                min-width: 45%;
+                max-width: 45%;
+                margin-bottom: 10px;
+            }
+
+            #boxMascheraDiRicercaPerServizioStandard .separatoreCampoRicerca input[type="checkbox"], .boxMascheraDiRicercaPerServizioStandard .separatoreCampoRicerca input[type="checkbox"] {
+                float: left;
+                width: auto;
+                min-width: auto;
+                max-width: none;
+            }
+
+        #boxMascheraDiRicercaPerServizioStandard .separatoreCampoRicerca select, .boxMascheraDiRicercaPerServizioStandard .separatoreCampoRicerca select {
+            float: left;
+            width: 50%;
+        }*/
+
+    #boxMascheraDiRicercaPerServizioStandard .campoPulsante, .boxMascheraDiRicercaPerServizioStandard .campoPulsante {
+        clear: both;
+        float: left;
+        padding: .5rem 0 .5rem 30%;
+    }
+
+        #boxMascheraDiRicercaPerServizioStandard .campoPulsante input, .boxMascheraDiRicercaPerServizioStandard .campoPulsante input {
+            padding: 0 1rem;
+            margin-right: .5rem;
+        }
+
+        #boxMascheraDiRicercaPerServizioStandard .campoPulsante a, .boxMascheraDiRicercaPerServizioStandard .campoPulsante a {
+            padding: 0 1rem;
+            margin-right: .5rem;
+            -webkit-appearance: button;
+            cursor: pointer;
+        }
+
+    #boxMascheraDiRicercaPerServizioStandard .separatoreCampoRicerca input.short, .boxMascheraDiRicercaPerServizioStandard .separatoreCampoRicerca input.short {
+        width: 19%;
+        min-width: 19%;
+        max-width: 19%;
+    }
+
+    #boxMascheraDiRicercaPerServizioStandard .separatoreCampoRicerca span.short, .boxMascheraDiRicercaPerServizioStandard .separatoreCampoRicerca span.short {
+        float: left;
+        margin: 0 0.5%;
+    }
+
+    #boxMascheraDiRicercaPerServizioStandard .separatoreCampoRicerca input.short:first-of-type, .boxMascheraDiRicercaPerServizioStandard .separatoreCampoRicerca input.short:first-of-type {
+        width: 30%;
+        min-width: 30%;
+        max-width: 30%;
+    }
+
+/*******************************************************************/
+/*********** MASCHERA DI RICERCA PER SERVIZI STANDARD - RASSEGNA EVOLUTA **************/
+/*******************************************************************/
+
+#formid_centro #boxMascheraDiRicercaPerServizioStandard .separatoreCampoRicerca LABEL .evidenzia {
+    color: #777;
+    font-weight: bold;
+}
+
+#formid_centro #boxMascheraDiRicercaPerServizioStandard .separatoreCampoRicerca .separatoreSceltaRicerca {
+    float: left;
+    width: 51% !important;
+    position: relative;
+}
+
+
+
+    #formid_centro #boxMascheraDiRicercaPerServizioStandard .separatoreCampoRicerca .separatoreSceltaRicerca .text {
+        position: relative;
+        float: left;
+        display: block;
+        width: 100%;
+    }
+
+        #formid_centro #boxMascheraDiRicercaPerServizioStandard .separatoreCampoRicerca .separatoreSceltaRicerca .text INPUT {
+            width: 100% !important;
+        }
+
+    #formid_centro #boxMascheraDiRicercaPerServizioStandard .separatoreCampoRicerca .separatoreSceltaRicerca .check {
+        position: relative;
+        float: left;
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 1% 0;
+    }
+
+        #formid_centro #boxMascheraDiRicercaPerServizioStandard .separatoreCampoRicerca .separatoreSceltaRicerca .check INPUT {
+            float: none;
+            width: 20px !important;
+        }
+
+        #formid_centro #boxMascheraDiRicercaPerServizioStandard .separatoreCampoRicerca .separatoreSceltaRicerca .check LABEL {
+            float: none;
+            width: auto;
+        }
+
+/*******************************************************************/
+/*********** INVIO MAIL STANDARD ********************/
+/*******************************************************************/
+
+
+.invioMailStandard FIELDSET {
+    margin: 1em 0;
+    padding: 1em 10px;
+}
+
+    .invioMailStandard FIELDSET SELECT, .invioMailStandard FIELDSET INPUT, .invioMailStandard FIELDSET textarea, .invioMailStandard .RigaDati SELECT, .invioMailStandard .RigaDati INPUT, .invioMailStandard .RigaDati textarea {
+        font-size: 100%;
+        width: 70% !important;
+    }
+
+.invioMailStandard TEXTAREA {
+    font-size: 100%;
+    font-family: Arial;
+}
+
+.invioMailStandard LEGEND {
+    color: BLACK;
+}
+
+
+.invioMailStandard .RigaDati, .invioMailStandard .RigaDatiPrivacy {
+    clear: both;
+    padding: 0.5em 0;
+}
+
+    .invioMailStandard .RigaDati .Chiave {
+        width: 25%;
+        float: left;
+        margin-right: 5%;
+    }
+
+
+    .invioMailStandard .RigaDati span, .invioMailStandard .RigaDati label {
+        width: 25%;
+        float: left;
+        margin-right: 5%;
+    }
+
+    .invioMailStandard .RigaDati .Chiave span, .invioMailStandard .RigaDati .Chiave label {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+    }
+
+
+    .invioMailStandard .RigaDatiPrivacy .Chiave {
+        width: auto;
+        float: left;
+        margin-right: 2%;
+    }
+
+    .invioMailStandard .RigaDatiPrivacy input {
+        width: auto !important;
+    }
+
+.invioMailStandard .boxCodiceAntiSpam {
+    clear: both;
+    float: left;
+    width: 100%;
+    line-height: 2em;
+    vertical-align: middle;
+    padding: 0.5em 0;
+}
+
+    .invioMailStandard .boxCodiceAntiSpam label {
+        width: auto;
+        float: left;
+        margin-right: 1%;
+    }
+
+    .invioMailStandard .boxCodiceAntiSpam img {
+        width: auto;
+        float: left;
+        margin-right: 1%;
+    }
+
+    .invioMailStandard .boxCodiceAntiSpam input {
+        width: auto;
+        float: left;
+        margin-right: 0%;
+    }
+
+
+
+.invioMailStandard #boxBottoni, .invioMailStandard .boxBottoni {
+    margin-top: 10px;
+    text-align: center;
+}
+
+    .invioMailStandard #boxBottoni input, .invioMailStandard .boxBottoni input {
+        font-size: 100%;
+        width: auto !important;
+    }
+
+
+.invioMailStandard .back {
+    margin-top: 10px;
+}
+
+
+.invioMailStandard IMG {
+    clear: both;
+    float: right;
+    width: 170px;
+    margin-left: 10px;
+}
+
+.invioMailStandard ul {
+    margin: .5em 0;
+    padding: .5em 0;
+    clear: none;
+    margin-right: 180px;
+}
+
+
+    .invioMailStandard ul li {
+        list-style-type: none;
+        margin: .5em 0;
+        padding: .5em 0;
+    }
+
+.invioMailStandard #boxBottoni a {
+    -webkit-appearance: button;
+    cursor: pointer;
+    padding: 0.2em 1%;
+}
+
+.DettaglioInvioStandard .BoxPaginaPrecedente, .DettaglioInvioStandard #BoxPaginaPrecedente {
+    clear: both;
+}
+
+.clear-left {
+    clear: left;
+}
+
+/*******************************************************************/
+/*********** COMPILA FORM ********************/
+/*******************************************************************/
+.CompilazioneForm .row {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+    .CompilazioneForm .row SELECT, .CompilazioneForm .row INPUT, .CompilazioneForm .row textarea {
+        font-size: 100%;
+        width: 59% !important;
+        margin-right: 1%;
+    }
+
+        .CompilazioneForm .row INPUT[type=radio] {
+            width: 5% !important;
+        }
+
+/*******************************************************************/
+/*********** AREA RISERVATA ********************/
+/*******************************************************************/
+
+#boxAreaRiservataArchivio div {
+    clear: both;
+}
+
+span.SocialLogin {
+    display: block;
+    text-align: center;
+}
+
+/*******************************************************************/
+/*********** RISULTATI RICERCA STANDARD - CARDS ********************/
+/*******************************************************************/
+
+.risultatiRicercaStandard {
+}
+
+    .risultatiRicercaStandard .record {
+        border-bottom: 1px solid #ebebeb;
+        padding-bottom: .5rem;
+        margin-bottom: .5rem;
+        clear: both;
+    }
+
+    .risultatiRicercaStandard .data {
+        border-right: 1px solid #ebebeb;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-right: 1rem;
+        line-height: 1rem;
+    }
+
+        .risultatiRicercaStandard .data .day {
+            font-size: 1.6rem;
+            line-height: 1.6rem;
+        }
+
+        .risultatiRicercaStandard .data .month {
+            font-size: 1rem;
+        }
+
+        .risultatiRicercaStandard .data .year {
+            font-size: 1rem;
+        }
+
+    .risultatiRicercaStandard .titolo-record {
+        font-size: 1.4rem;
+        font-weight: normal;
+        margin-top: 0;
+        margin-top: -0.3rem;
+    }
+
+    .risultatiRicercaStandard .figure {
+        width: 150px;
+        height: auto;
+        float: left;
+        margin-right: 1rem;
+    }
+
+        .risultatiRicercaStandard .figure img {
+            width: 100%;
+            height: auto;
+        }
+
+    .risultatiRicercaStandard li {
+        list-style: none;
+    }
+
+    .risultatiRicercaStandard .paginazione {
+        display: block;
+        margin: 5px 0;
+        clear: both;
+        float: left;
+        width: 98%;
+        padding: 0.5em 1%;
+        border: 1px dotted black;
+    }
+
+        .risultatiRicercaStandard .paginazione ul {
+            margin-bottom: 0px;
+        }
+
+        .risultatiRicercaStandard .paginazione li {
+            display: inline-block;
+            width: 32.7%;
+            text-align: center;
+            background-color: #C8CCCE;
+            color: black;
+        }
+
+            .risultatiRicercaStandard .paginazione li a {
+                display: block;
+                color: black;
+            }
+
+    .risultatiRicercaStandard .allegato {
+        margin-top: 5px;
+        padding-left: 4px;
+        margin-bottom: 5px;
+        clear: both;
+    }
+
+        .risultatiRicercaStandard .allegato A {
+            border: 0px;
+            width: auto;
+            font-weight: normal;
+            padding-left: 5px;
+            text-decoration: none;
+        }
+
+        .risultatiRicercaStandard .allegato IMG {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+    .risultatiRicercaStandard .BoxPaginaPrecedente, .risultatiRicercaStandard #BoxPaginaPrecedente {
+        clear: both;
+    }
+
+    .risultatiRicercaStandard .bold {
+        font-weight: bold;
+    }
+
+/*******************************************************************/
+/*********** RISULTATI RICERCA STANDARD - TABELLA ********************/
+/*******************************************************************/
+
+.risultatiRicercaStandardTabella {
+}
+
+    .risultatiRicercaStandardTabella table {
+        min-width: 100%;
+    }
+
+    .risultatiRicercaStandardTabella .Tabella {
+        padding-bottom: 1em;
+    }
+
+    .risultatiRicercaStandardTabella .Riga {
+        clear: both;
+        border-bottom: 1px dotted #9F9F9F;
+        padding: 5px 1%;
+        background-color: #E4E3E0;
+        color: black;
+    }
+
+        .risultatiRicercaStandardTabella .Riga th, .risultatiRicercaStandardTabella .Riga td {
+            padding: 1%;
+        }
+
+    .risultatiRicercaStandardTabella .RigaDispari {
+        background-color: #F5F5F5;
+    }
+
+    .risultatiRicercaStandardTabella .RigaHeader {
+        font-weight: bold;
+        background-color: #4D4D4D;
+        color: white;
+    }
+
+
+    .risultatiRicercaStandardTabella caption {
+        display: none;
+    }
+
+
+
+    .risultatiRicercaStandardTabella .paginazione {
+        display: block;
+        margin: 5px 0;
+        clear: both;
+        float: left;
+        width: 100%;
+        padding: 0.5em 1%;
+        border: 1px dotted black;
+    }
+
+    .risultatiRicercaStandardTabella .BoxPaginaPrecedente, .risultatiRicercaStandardTabella #BoxPaginaPrecedente {
+        clear: both;
+    }
+
+/*******************************************************************/
+/*********** RISULTATI RICERCA STANDARD - RECORD AFFIANCATI  ********************/
+/*******************************************************************/
+
+.risultatiRicercaAffincati {
+}
+
+    .risultatiRicercaAffincati .boxAffincato.ricerca {
+        display: inline-block;
+        clear: both;
+        float: none;
+        width: 48%;
+        padding: 5px 1% 0;
+        margin: 5px 0 0;
+        overflow: hidden;
+        vertical-align: top;
+        margin-right: -4px;
+    }
+
+        .risultatiRicercaAffincati .boxAffincato.ricerca .immagine {
+            display: block;
+            width: 300px;
+            max-width: 90%;
+            height: 150px;
+            line-height: 150px;
+            text-align: center;
+            margin: 5px auto;
+            overflow: hidden;
+            border: 1px solid #E2E2E2;
+            border-radius: 24px;
+            background-color: #f7f7f7;
+        }
+
+            .risultatiRicercaAffincati .boxAffincato.ricerca .immagine IMG {
+                margin: 0 auto;
+                max-width: 100%;
+                vertical-align: middle;
+            }
+
+            .risultatiRicercaAffincati .boxAffincato.ricerca .immagine .descrizioneAffiancato {
+                padding: 5px 1% 15px;
+                width: 98%;
+                font-size: 110%;
+            }
+
+
+    .risultatiRicercaAffincati .boxAffincato.dettaglio {
+        width: 100%;
+        border: none;
+    }
+
+        .risultatiRicercaAffincati .boxAffincato.dettaglio .descrizioneAffincati {
+            padding: 5px 0;
+            font-size: 120%;
+            color: #333;
+            line-height: 1.4em;
+        }
+
+        .risultatiRicercaAffincati .boxAffincato.dettaglio .Immagine {
+            display: inline-block;
+            width: 100%;
+            height: auto;
+            text-align: left;
+            overflow: hidden;
+            vertical-align: top;
+        }
+
+            .risultatiRicercaAffincati .boxAffincato.dettaglio .Immagine img {
+                padding: 0;
+                margin: 0 auto;
+                width: 98%;
+                height: auto;
+            }
+
+        .risultatiRicercaAffincati .boxAffincato.dettaglio .pulsanteDonaOnline {
+            display: block;
+            width: 100%;
+        }
+
+            .risultatiRicercaAffincati .boxAffincato.dettaglio .pulsanteDonaOnline A {
+                display: block;
+                font-size: 130%;
+                padding: 10px 0;
+                margin: 10px auto;
+                border: 1px solid #ccc;
+                background: #ebebeb;
+                border-radius: 10px;
+                text-align: center;
+            }
+
+                .risultatiRicercaAffincati .boxAffincato.dettaglio .pulsanteDonaOnline A:hover {
+                    background: #333;
+                    color: White;
+                }
+
+/*******************************************************************/
+/*********** POLITICI ********************/
+/*******************************************************************/
+
+.Tabella.TabellaPolitici table {
+    min-width: 100%;
+}
+
+
+/*******************************************************************/
+/*********** RECORD AFFINCATI (INFORMAZIONI - TOUR TURISTICO....)  ********************/
+/*******************************************************************/
+
+.ImmagineAffiancate .record {
+    display: inline-block;
+    min-height: 280px !important;
+    padding: 10px 1%;
+    text-align: center;
+    vertical-align: top;
+    width: 30.25%;
+}
+
+    .ImmagineAffiancate .record .Immagine {
+        width: 100%;
+        height: 175px;
+        background-color: #ECF2E6;
+        margin-bottom: 2px;
+        overflow: hidden;
+        display: block;
+    }
+
+        .ImmagineAffiancate .record .Immagine IMG {
+            clear: both;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 175px;
+            width: auto;
+            width: 100%;
+        }
+
+    .ImmagineAffiancate .record .boxTitolo {
+        background: #EAEAD9;
+        width: 100%;
+        padding: 10px 0;
+        font-size: 110%;
+        font-weight: bold;
+        display: block;
+    }
+
+.ImmagineAffiancate article {
+    display: inline;
+}
+
+
+.ImmagineAffiancate .record .boxSlogan {
+    padding: 5px 0;
+    font-style: italic;
+    display: block;
+}
+
+article h1, article h2, article h3, article h4, article h5, article h6, article ol, article p, article ul {
+    max-width: 100%;
+}
+
+
+/*******************************************************************/
+/*********** DETTAGLIO RICERCA STANDARD ********************/
+/*******************************************************************/
+
+.pull-left.col-md-7 {
+    clear: left;
+}
+
+.pull-right.col-md-5 {
+    clear: right;
+}
+
+/*******************************************************************/
+/*********** DETTAGLIO RICERCA STANDARD ********************/
+/*******************************************************************/
+
+
+#galleriaImmagini {
+    clear: both;
+    float: left;
+    width: 100%;
+    padding: 0;
+    padding-bottom: 0.2em;
+}
+
+    #galleriaImmagini .singolaImmagine {
+        display: inline-block;
+        width: 99.8%;
+        text-align: center;
+        vertical-align: top;
+        clear: both;
+        border: 1px solid #E7EBED;
+        padding: 0 0%;
+        margin: 0;
+        max-height: 100px;
+        overflow: hidden;
+        margin-bottom: 5px;
+    }
+
+        * html #galleriaImmagini .singolaImmagine IMG {
+            width: 80%;
+            height: auto;
+        }
+
+        #galleriaImmagini .singolaImmagine IMG {
+            max-width: 100%;
+            height: auto;
+        }
+
+
+/*******************************************************************/
+/************** GESTIONE BROWSER OBSOLETI **************************/
+/*******************************************************************/
+
+/******************* DA IE8 (COMPRESO) IN GIU **********************/
+#oldIeMessage {
+    background: #A42E2E;
+    display: block;
+    text-align: center;
+    padding: 1em;
+    margin: 0 0 1em;
+}
+
+html.old-ie {
+    overflow-x: scroll;
+}
+
+.old-ie .navbar-nav {
+    margin: 0;
+}
+
+.old-ie .row {
+    margin: 0;
+    display: inline-block;
+    width: 100%;
+}
+
+.old-ie #boxTotale .side-menu-container {
+    clear: both;
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    background-color: #f8f8f8;
+}
+
+    .old-ie #boxTotale .side-menu-container A {
+        color: #494949;
+    }
+
+    .old-ie #boxTotale .side-menu-container ul.nav.navbar-nav.navmenu {
+        display: block;
+        width: 100%;
+    }
+
+        .old-ie #boxTotale .side-menu-container ul.nav.navbar-nav.navmenu li ul.collapse.in {
+            display: block;
+            width: 100%;
+        }
+
+        .old-ie #boxTotale .side-menu-container ul.nav.navbar-nav.navmenu li {
+            display: block;
+            width: 100%;
+            padding: .5em 0;
+            border-top: 1px solid #e7e7e7;
+        }
+
+            .old-ie #boxTotale .side-menu-container ul.nav.navbar-nav.navmenu li ul li {
+                display: block;
+                width: 100%;
+                padding: 5px 0;
+                border-top: 1px solid #e7e7e7;
+            }
+
+            .old-ie #boxTotale .side-menu-container ul.nav.navbar-nav.navmenu li.area .spanArea {
+                float: left;
+                width: 75%;
+                padding-left: 5%;
+            }
+
+            .old-ie #boxTotale .side-menu-container ul.nav.navbar-nav.navmenu li.categoria {
+                clear: both;
+                float: left;
+                background-color: #D3D3D3;
+            }
+
+                .old-ie #boxTotale .side-menu-container ul.nav.navbar-nav.navmenu li.categoria .spanCategoria {
+                    float: left;
+                    width: 70%;
+                    padding-left: 10%;
+                }
+
+            .old-ie #boxTotale .side-menu-container ul.nav.navbar-nav.navmenu li.pagina {
+                clear: both;
+                float: left;
+                background-color: #B3B3B3;
+            }
+
+                .old-ie #boxTotale .side-menu-container ul.nav.navbar-nav.navmenu li.pagina .spanPagina {
+                    float: left;
+                    width: 65%;
+                    padding-left: 15%;
+                }
+
+            .old-ie #boxTotale .side-menu-container ul.nav.navbar-nav.navmenu li.sottoPagina {
+                clear: both;
+                float: left;
+                background-color: #555555;
+            }
+
+                .old-ie #boxTotale .side-menu-container ul.nav.navbar-nav.navmenu li.sottoPagina A {
+                    color: White;
+                }
+
+                .old-ie #boxTotale .side-menu-container ul.nav.navbar-nav.navmenu li.sottoPagina .spanSottoPagina {
+                    float: left;
+                    width: 65%;
+                    padding-left: 15%;
+                }
+
+            .old-ie #boxTotale .side-menu-container ul.nav.navbar-nav.navmenu li.area .collapse-icon {
+                float: left;
+                width: 20%;
+                text-align: center;
+            }
+
+
+/****************************IE6 ***********************************/
+.ie6#boxTotale {
+    width: 980px;
+    margin: 0 auto;
+}
+
+    .ie6#boxTotale #formid_sx {
+        float: left;
+        width: 300px;
+    }
+
+    .ie6#boxTotale #formid_centro {
+        float: left;
+        width: 665px;
+        padding-right: 15px;
+    }
+
+    .ie6#boxTotale #formid_fondo3 {
+        float: left;
+        width: 100%;
+    }
+
+    .ie6#boxTotale .home-alternate-container {
+        background: white;
+        border-top: 1px solid #ebebeb;
+        padding-top: 10px;
+        margin-top: 10px;
+    }
+
+.ie6 .nav-social {
+    display: none;
+}
+
+
+.ie6 .logo-nome-ente {
+    clear: both;
+    float: left;
+    padding: 1em 0;
+    width: 48%;
+}
+
+.ie6 header .header-middle-right {
+    float: left;
+    width: 50%;
+}
+
+    .ie6 header .header-middle-right .ico-lingua {
+        width: 50px;
+    }
+
+.ie6 #boxRicercaNelSito INPUT {
+    line-height: 48px;
+    padding: 0 1em;
+}
+
+.ie6 .sub-nav.navbar-nav {
+    clear: both;
+    float: left;
+    width: 100%;
+    background-color: #9CA2A7;
+}
+
+    .ie6 .sub-nav.navbar-nav > li {
+        float: left;
+        width: 30%;
+    }
+
+.ie6 .data-news {
+    text-align: left;
+}
+
+
+/****************************IE7 ***********************************/
+
+.ie7#boxTotale {
+    width: 980px;
+    margin: 0 auto;
+}
+
+    .ie7#boxTotale #formid_sx {
+        float: left;
+        width: 300px;
+    }
+
+    .ie7#boxTotale #formid_centro {
+        float: left;
+        width: 665px;
+        padding-right: 15px;
+    }
+
+    .ie7#boxTotale #formid_fondo3 {
+        float: left;
+        width: 100%;
+    }
+
+    .ie7#boxTotale .home-alternate-container {
+        background: white;
+        border-top: 1px solid #ebebeb;
+        padding-top: 10px;
+        margin-top: 10px;
+    }
+
+
+.ie7 .container {
+    padding: 0;
+}
+
+.ie7 #oldIeMessage {
+    width: 90%;
+    margin: 0 auto 1em;
+}
+
+.ie7 .ente-appartenenza {
+    float: left;
+    width: 50%;
+}
+
+.ie7 .accesso-servizi {
+    float: left;
+    width: 44%;
+}
+
+.ie7 .nav-social {
+    display: none;
+}
+
+.ie7 header .header-middle-right .container {
+    padding-top: 1em;
+}
+
+
+.ie7 .logo-nome-ente {
+    clear: both;
+    float: left;
+    padding: 1em 0;
+    width: 48%;
+}
+
+.ie7 header .header-middle-right {
+    float: left;
+    width: 50%;
+}
+
+    .ie7 header .header-middle-right .ico-lingua {
+        width: 50px;
+    }
+
+.ie7 #boxRicercaNelSito INPUT {
+    line-height: 48px;
+    padding: 0 1em;
+}
+
+.ie7 .sub-nav.navbar-nav {
+    clear: both;
+    float: left;
+    width: 100%;
+    background-color: #9CA2A7;
+}
+
+    .ie7 .sub-nav.navbar-nav > li {
+        float: left;
+        width: 30%;
+    }
+
+.ie7 .data-news {
+    text-align: left;
+}
+
+
+/****************************IE8 ***********************************/
+.ie8 header .header-top .container {
+    padding-bottom: 1em;
+}
+
+.old-ie #boxTotale.ie8 #nav-icon {
+    font-size: 3em;
+}
+
+    .old-ie #boxTotale.ie8 #nav-icon.open {
+        position: fixed;
+        top: 10px;
+    }
+
+.old-ie #boxTotale.ie8 #burger-wrapper .menu-icon {
+    font-size: 0.778em;
+}
+
+.old-ie #boxTotale.ie8 .side-menu-container {
+    width: 100%;
+}
+
+.old-ie #boxTotale.ie8 .side-menu-container {
+    float: left;
+}
+
+    .old-ie #boxTotale.ie8 .side-menu-container ul.nav.navbar-nav.navmenu {
+        clear: both;
+        float: left;
+        margin: 0;
+        padding: 0;
+    }
+
+        .old-ie #boxTotale.ie8 .side-menu-container ul.nav.navbar-nav.navmenu li {
+            clear: both;
+            float: left;
+            width: 100%;
+            padding: 1em 0;
+        }
+
+            .old-ie #boxTotale.ie8 .side-menu-container ul.nav.navbar-nav.navmenu li A {
+                display: block;
+            }
+
+            .old-ie #boxTotale.ie8 .side-menu-container ul.nav.navbar-nav.navmenu li.area .spanArea {
+                padding-left: 1em;
+                width: 80%;
+            }
+
+            .old-ie #boxTotale.ie8 .side-menu-container ul.nav.navbar-nav.navmenu li.categoria .spanCategoria {
+                padding-left: 1.5em;
+                width: 80%;
+            }
+
+            .old-ie #boxTotale.ie8 .side-menu-container ul.nav.navbar-nav.navmenu li.pagina .spanPagina {
+                padding-left: 2em;
+                width: 80%;
+            }
+
+            .old-ie #boxTotale.ie8 .side-menu-container ul.nav.navbar-nav.navmenu li.sottoPagina .spanSottoPagina {
+                padding-left: 2.5em;
+                width: 80%;
+            }
+
+.old-ie #boxTotale.ie8 header .header-middle #ricercaMobile {
+    top: 0px;
+}
+
+/*******************************************************************/
+/************** SCHERMI GRANDI - BOOTSTRAP CUSTOMIZATION ***********/
+/*******************************************************************/
+@media (min-width: 768px) { /* col-sm + */
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) { /* col-sm */
+    .notizie-con-foto-container .notizia:nth-child(2n+1),
+    .prossimi-eventi-container .evento:nth-child(2n+1) {
+        clear: left;
+    }
+}
+
+@media (min-width: 992px) { /* col-md  + */
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) { /* col-md */
+    .notizie-con-foto-container .notizia:nth-child(3n+1),
+    .prossimi-eventi-container .evento:nth-child(3n+1) {
+        clear: left;
+    }
+}
+
+@media (min-width: 1200px) { /* col-lg */
+    .notizie-con-foto-container .notizia:nth-child(4n+1),
+    .prossimi-eventi-container .evento:nth-child(4n+1) {
+        clear: left;
+    }
+}
+
+/*******************************************************************/
+/************** SCHERMI MOLTO PICCOLI - SMARTPHONE *****************/
+/*******************************************************************/
+
+@media all and (max-width: 1199px) /* col-md  - */
+{
+    .risultatiRicercaStandard .data {
+        text-align: left;
+        border: none;
+        padding: 0 0 .5rem 0;
+        margin: 0;
+    }
+
+        .risultatiRicercaStandard .data .day {
+            padding: 0;
+        }
+
+        .risultatiRicercaStandard .data .month {
+            padding: 0;
+        }
+
+        .risultatiRicercaStandard .data .year {
+            padding: 0;
+        }
+}
+
+@media all and (max-width: 767px) /* col-xs */
+{
+    /* .h1, h1 {
+        font-size: 2.000em;
+    }
+
+    .h2, h2 {
+        font-size: 1.667em;
+    }
+
+    .h3, h3 {
+        font-size: 1.111em;
+    }
+
+    .h4, h4 {
+        font-size: 1.056em;
+    }
+
+    .h5, h5 {
+        font-size: 1.000em;
+    }
+
+    .h6, h6 {
+        font-size: 1.000em;
+    }
+
+    p {
+        font-size: 1.000em;
+    } */
+
+    header .header-top {
+        height: 2rem;
+        overflow-y: hidden;
+        line-height: 2rem;
+        font-size: .7rem;
+    }
+
+    .pull-left.col-sm-12 {
+        clear: both;
+        width: 100%;
+    }
+
+    .pull-right.col-sm-12 {
+        clear: both;
+        width: 100%;
+    }
+
+    /*header .header-top img,*/ header .header-top .glyphicon {
+        display: none;
+        padding: 0;
+    }
+
+    header .header-middle {
+        height: 100px;
+        overflow-y: hidden;
+    }
+
+    body.onscroll header.header_container .header-middle {
+        overflow-y: visible;
+    }
+
+    .text-xs-left {
+        text-align: left;
+    }
+
+    #formid_intestazione2 .burger-wrapper #burger-wrapper {
+        width: 30px;
+    }
+
+    #burger-wrapper .menu-icon {
+        display: none;
+    }
+
+    #nav-icon {
+        font-size: 2em;
+    }
+
+    .old-ie #boxTotale.ie8 #nav-icon {
+        font-size: 2em;
+    }
+
+    #boxTotale.menu-open {
+        margin-left: 250px;
+        margin-right: -250px;
+    }
+
+    #menuEcm {
+        width: 250px;
+    }
+
+    #overlay {
+        left: 251px;
+    }
+
+    #menuEcm.menu-close {
+        left: -252px;
+    }
+
+    #menuEcm.menu-open {
+        left: 0;
+    }
+
+    #menuEcm ul li .collapse-icon {
+        width: 14%;
+    }
+
+    #menuEcm .navbar-nav li .collapse-icon a {
+        padding: .5rem .4em;
+    }
+
+    #menuEcm ul li .spanArea,
+    #menuEcm ul li .spanCategoria,
+    #menuEcm ul li .spanPagina {
+        width: 80%;
+    }
+
+    .logo-nome-ente {
+        font-size: .8rem;
+    }
+
+        .logo-nome-ente .logo-wrapper {
+        }
+
+        .logo-nome-ente img.logo {
+            width: 3rem;
+            height: 3rem;
+            margin-right: 0;
+            max-width: 100%;
+        }
+
+        .logo-nome-ente .nome-wrapper {
+        }
+
+    ul#slideshow {
+        height: 200px !important;
+    }
+
+        ul#slideshow li.singolo-banner {
+            height: 200px !important;
+        }
+
+    .data-news {
+        text-align: left;
+    }
+
+    body.onscroll header.header_container .header-middle .BtnRicercaMobile {
+        float: right;
+    }
+
+    body.onscroll header.header_container .header-middle #ricercaMobile {
+        position: fixed;
+        top: 62px;
+    }
+
+        body.onscroll header.header_container .header-middle #ricercaMobile .row {
+            padding-top: .5rem;
+        }
+
+    #boxMascheraDiRicercaPerServizioStandard .separatoreCampoRicerca .h6, .boxMascheraDiRicercaPerServizioStandard .separatoreCampoRicerca .h6 {
+        margin-left: 0;
+        min-width: 10%;
+    }
+
+
+    #boxMascheraDiRicercaPerServizioStandard .separatoreCampoRicerca label, .boxMascheraDiRicercaPerServizioStandard .separatoreCampoRicerca label {
+        clear: both;
+        float: none;
+        width: 100%;
+        text-align: center;
+        padding-right: 0;
+    }
+
+    #boxMascheraDiRicercaPerServizioStandard .separatoreCampoRicerca input, .boxMascheraDiRicercaPerServizioStandard .separatoreCampoRicerca input {
+        float: none;
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+        #boxMascheraDiRicercaPerServizioStandard .separatoreCampoRicerca input.campoData, .boxMascheraDiRicercaPerServizioStandard .separatoreCampoRicerca input.campoData {
+            width: 88%;
+            min-width: 89%;
+            max-width: 89%;
+        }
+
+    #boxMascheraDiRicercaPerServizioStandard .separatoreCampoRicerca select, .boxMascheraDiRicercaPerServizioStandard .separatoreCampoRicerca select {
+        float: none;
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    #boxMascheraDiRicercaPerServizioStandard .separatoreCampoRicerca input.short, .boxMascheraDiRicercaPerServizioStandard .separatoreCampoRicerca input.short {
+        width: 48%;
+        min-width: 48%;
+        max-width: 48%;
+        float: left;
+    }
+
+        #boxMascheraDiRicercaPerServizioStandard .separatoreCampoRicerca input.short:first-of-type, .boxMascheraDiRicercaPerServizioStandard .separatoreCampoRicerca input.short:first-of-type {
+            width: 51%;
+            min-width: 50%;
+            max-width: 50%;
+            float: left;
+        }
+
+    #boxMascheraDiRicercaPerServizioStandard .campoPulsante, .boxMascheraDiRicercaPerServizioStandard .campoPulsante {
+        clear: both;
+        float: none;
+        width: 100%;
+        text-align: center;
+        padding: .5rem 0;
+    }
+
+        #boxMascheraDiRicercaPerServizioStandard .campoPulsante input, .boxMascheraDiRicercaPerServizioStandard .campoPulsante input {
+            margin: 0 .2rem;
+        }
+
+    .ImmagineAffiancate .record {
+        width: 46.25%;
+    }
+}
+
+@media all and (max-width: 519px) /* col-meno-di-xs */
+{
+    .multilingua {
+        display: none;
+    }
+
+    .BtnRicercaMobile.col-xs-6 {
+        width: 100%;
+    }
+
+    body.onscroll header.header_container .header-middle .BtnRicercaMobile .pulsanteRicerca {
+        margin: 0;
+    }
+
+    .logo-nome-ente {
+        width: 58%;
+        overflow: hidden;
+    }
+
+        .logo-nome-ente A {
+            display: block;
+        }
+
+        .logo-nome-ente .logo-wrapper {
+            width: 1px;
+            overflow: hidden;
+        }
+
+    #formid_fondo2 .logo-nome-ente .logo-wrapper {
+        width: inherit;
+    }
+
+    .logo-nome-ente img.logo {
+        padding-left: 2px;
+    }
+
+    .logo-nome-ente span.nome-wrapper {
+        width: 95%;
+        text-align: center;
+    }
+
+    #formid_fondo2 .logo-nome-ente span.nome-wrapper {
+        width: inherit;
+        text-align: left;
+    }
+
+    header .header-middle-right {
+        float: right;
+        text-align: right;
+    }
+
+    .BtnRicercaMobile .pulsanteRicerca {
+        font-size: 1.20rem;
+        height: 35px;
+        margin: 13px 0;
+        width: 35px;
+    }
+
+    #slideshowWrapper {
+        display: none;
+    }
+
+    .col-xxs-12 {
+        width: 100%;
+    }
+
+    .ImmagineAffiancate .record {
+        width: 99%;
+    }
+}

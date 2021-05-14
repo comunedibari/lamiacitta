@@ -1,0 +1,10 @@
+/* SPDX-License-Identifier: AGPL-3.0-or-later */
+.react-datepicker-wrapper {
+    display: block;
+}
+
+.react-datepicker__input-container {
+    display: block;
+    /* position: relative; */
+    /* display: inline-block; */
+}
