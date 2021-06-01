@@ -61,3 +61,7 @@ localisation:
   localisationReady: no
   availableLanguages:
     - it
+it:
+  countryExtensionVersion: "0.2"
+  riuso:
+    codiceIPA: c_a662
