@@ -6,7 +6,7 @@ import { $logger } from '../services/LoggerService';
 import { $http } from '../services/HttpService';
 // import { $http as _$http } from '../services/MockHttpService';
 
-const DEFAULT_LOGIN_TOKEN = "68B100FC-41D5-4AEF-8BCE-87D95E29C748";
+const DEFAULT_LOGIN_TOKEN = "SOSTITUIRE";
 $http.setLoginToken(DEFAULT_LOGIN_TOKEN);
 
 const initialState = {

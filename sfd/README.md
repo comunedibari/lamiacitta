@@ -58,6 +58,11 @@ a questo punto occorre anche editare il file:
 .env.local (nel caso di ambiente di test locale)
 e inserire nella variabile "REACT_APP_API_URL" l'URL di base per i web service.
 
+In src/redux/reducer.js occorre modificare la riga che attualmente è così:
+const DEFAULT_LOGIN_TOKEN = "SOSTITUIRE";
+con:
+const DEFAULT_LOGIN_TOKEN = "68B100FC-41D5-4AEF-8BCE-87D95E29C748";
+
 In src/shared/constants si può, se necessario, modificare la costante WS_ENDPOINTS per definire la parte finale dell'URL da chiamare per i web service.
 La concatenazione del valore di REACT_APP_API_URL e del sotto oggetto di WS_ENDPOINTS identifica l'URL del web service.
 
